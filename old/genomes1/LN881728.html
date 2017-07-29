@@ -1,0 +1,566 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Prokaryotic Virus Orthologous Groups</title>
+
+		<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+
+		<link rel="stylesheet" type="text/css" href="../datatables.css">
+
+		<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+		<script type="text/javascript" src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
+
+		<!-- My javascript!!! -->
+
+		<script  type="text/javascript" src="../table_java.js"></script>
+
+		<!-- Google Analytics!!! -->
+
+		<script  type="text/javascript" src="../GoogleAnalytics.js"></script>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1>Prokaryotic Virus Orthologous Groups</h1>
+
+		</header>
+
+		<article>
+
+			<h2>Individual Genome Table - List of proteins conserved in VOGs for this genome:</h2>
+
+			<p id="para">* NOTE: The following search box is a <i>"contains character"</i> rather than an <i>"exact match"</i> tool.</p>
+
+
+		</article>
+
+		<style type="text/css">
+
+			p#id {text-align: justified; margin-left: 1cm;}
+
+			.tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa; margin-left: 1cm; margin-right: 1cm;}
+
+			.tg td{font-family:Arial, sans-serif;font-size:14px;padding:7px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+
+			.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#cc7914;border-top-width:1px;border-bottom-width:1px; text-align:center}
+
+			.tg .tg-g8a9{background-color:#F0F8FF;font-family:Verdana, Geneva, sans-serif !important;}
+
+			.tg .tg-xt0r{font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;text-align:center}
+
+			.tg .tg-xt0r1{font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;text-align:left}
+
+			.tg .tg-xgst{background-color:#f8f4ec;font-family:Verdana, Geneva, sans-serif !important; text-align:center}
+
+			.tg .tg-xgst1{background-color:#f8f4ec;font-family:Verdana, Geneva, sans-serif !important; text-align:left}
+
+			.tg .tg-zemy{font-family:Verdana, Geneva, sans-serif !important;;text-align:center}
+
+			.tg .tg-zemy1{font-family:Verdana, Geneva, sans-serif !important;;text-align:left}
+
+			.tg .tg-9vto{font-family:Verdana, Geneva, sans-serif !important;}
+
+			.tg tr:hover td { background: #c3a87b !important;}
+
+			@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+
+		</style>
+
+		<center><div class="tg-wrap"><table class="tg">
+
+			<tr>
+			<th class="tg-xt0r">Species</th><th class="tg-xt0r">Genome Accession</th><th class="tg-xt0r">Genome Size (bp)</th><th class="tg-xt0r">Proteins</th><th class="tg-xt0r">VOGs</th><th class="tg-xt0r">Host</th><th class="tg-xt0r">Host Domain</th><th class="tg-xt0r">Genetic Material</th><th class="tg-xt0r">Order</th><th class="tg-xt0r">Family</th><th class="tg-xt0r">Genus</th>
+			</tr>
+			<tr>
+			<td class="tg-zemy"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1720496" target="_blank">Escherichia phage slur03&#10138</a></td><td class="tg-zemy"><a href="https://www.ncbi.nlm.nih.gov/nuccore/LN881728" target="_blank">LN881728&#10138</a></td><td class="tg-zemy">167467</td><td class="tg-zemy">275</td><td class="tg-zemy">224</td><td class="tg-zemy">Escherichia coli</td><td class="tg-zemy">Bacteria</td><td class="tg-zemy">dsDNA viruses, no RNA stage</td><td class="tg-zemy">Caudovirales</td><td class="tg-zemy"><a href="http://viralzone.expasy.org/all_by_species/140.html" target="_blank">Myoviridae&#10138</a></td><td class="tg-zemy"><a href="http://viralzone.expasy.org/all_by_species/504.html" target="_blank">T4likevirus&#10138</a></td>
+			</tr>
+		</table></center>
+
+		<table id="POGs_table" class="display" cellspacing="0" width="100%">
+			<thead>
+				<tr><th>VOGs</th><th>Host Domain</th><th>Number of Proteins</th><th>Number of Genomes</th><th>Number of Virus Families</th><th>Number of Virus Genera</th><th>Protein Annotation (Protein Accession)</th></tr>
+</thead>
+			<thead class="filters">
+				<tr><th>VOGs</th><th>Host Domain</th><th>Number of Proteins</th><th>Number of Genomes</th><th>Number of Virus Families</th><th>Number of Virus Genera</th><th>Protein Annotation (Protein Accession)</th></tr>
+			</thead>
+		<tbody>
+
+			<tr><td><a href="../VOGtables/VOG0018.html">See VOG0018&#8635</a></td><td>Bacteria+Archaea</td><td>495</td><td>494</td><td>3</td><td>17</td><td>DNA ligase [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01678.1" target="_blank">CUL01678.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0020.html">See VOG0020&#8635</a></td><td>Bacteria</td><td>404</td><td>404</td><td>3</td><td>17</td><td>deoxynucleotide monophosphate kinase [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01730.1" target="_blank">CUL01730.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0025.html">See VOG0025&#8635</a></td><td>Bacteria+Archaea</td><td>1644</td><td>1247</td><td>3</td><td>32</td><td>gp41 replication and recombination DNA helicase [Enterobacteria phage RB14] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01833.1" target="_blank">CUL01833.1&#10138</a>) RecA-like recombination protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01831.1" target="_blank">CUL01831.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0028.html">See VOG0028&#8635</a></td><td>Bacteria</td><td>477</td><td>477</td><td>3</td><td>13</td><td>RNaseH ribonuclease [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01633.1" target="_blank">CUL01633.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0050.html">See VOG0050&#8635</a></td><td>Bacteria</td><td>333</td><td>327</td><td>3</td><td>10</td><td>deoxycytidylate deaminase [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01664.1" target="_blank">CUL01664.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0083.html">See VOG0083&#8635</a></td><td>Bacteria</td><td>415</td><td>400</td><td>3</td><td>8</td><td>putative recombination endonuclease subunit [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01817.1" target="_blank">CUL01817.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0088.html">See VOG0088&#8635</a></td><td>Bacteria+Archaea</td><td>690</td><td>659</td><td>3</td><td>14</td><td>ribonucleotide reductase alpha subunit [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01648.1" target="_blank">CUL01648.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0092.html">See VOG0092&#8635</a></td><td>Bacteria</td><td>385</td><td>312</td><td>3</td><td>10</td><td>thymidylate synthetase [Enterobacteria phage RB14] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01645.1" target="_blank">CUL01645.1&#10138</a>) deoxycytidylate 5-hydroxymethyltransferase [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01829.1" target="_blank">CUL01829.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0227.html">See VOG0227&#8635</a></td><td>Bacteria</td><td>140</td><td>128</td><td>3</td><td>8</td><td>tail fibers [Escherichia phage vB_EcoM_JS09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01628.1" target="_blank">CUL01628.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0238.html">See VOG0238&#8635</a></td><td>Bacteria</td><td>137</td><td>137</td><td>3</td><td>8</td><td>hypothetical protein gp5.4 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01723.1" target="_blank">CUL01723.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0243.html">See VOG0243&#8635</a></td><td>Bacteria+Archaea</td><td>365</td><td>328</td><td>4</td><td>17</td><td>dN 3'phosphatase, 5'polynucleotide kinase [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01657.1" target="_blank">CUL01657.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0351.html">See VOG0351&#8635</a></td><td>Bacteria</td><td>233</td><td>231</td><td>2</td><td>5</td><td>putative prohead core scaffold protein and protease [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01704.1" target="_blank">CUL01704.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0356.html">See VOG0356&#8635</a></td><td>Bacteria</td><td>295</td><td>291</td><td>2</td><td>8</td><td>tail tube protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01709.1" target="_blank">CUL01709.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0367.html">See VOG0367&#8635</a></td><td>Bacteria</td><td>105</td><td>104</td><td>3</td><td>4</td><td>motB.2 hypothetical protein [Enterobacteria phage RB51] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01864.1" target="_blank">CUL01864.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0371.html">See VOG0371&#8635</a></td><td>Bacteria</td><td>108</td><td>106</td><td>3</td><td>3</td><td>hypothetical protein ACG-C40_0096 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01778.1" target="_blank">CUL01778.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0374.html">See VOG0374&#8635</a></td><td>Bacteria</td><td>96</td><td>95</td><td>1</td><td>2</td><td>hypothetical protein RB32ORF151w [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01724.1" target="_blank">CUL01724.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0375.html">See VOG0375&#8635</a></td><td>Bacteria</td><td>119</td><td>119</td><td>3</td><td>4</td><td>hypothetical protein MobD.6 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01769.1" target="_blank">CUL01769.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0377.html">See VOG0377&#8635</a></td><td>Bacteria</td><td>270</td><td>270</td><td>3</td><td>8</td><td>DNA helicase [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01859.1" target="_blank">CUL01859.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0384.html">See VOG0384&#8635</a></td><td>Bacteria</td><td>160</td><td>160</td><td>2</td><td>5</td><td>topoisomerase II medium subunit [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01616.1" target="_blank">CUL01616.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0388.html">See VOG0388&#8635</a></td><td>Bacteria</td><td>73</td><td>73</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p003 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01872.1" target="_blank">CUL01872.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0389.html">See VOG0389&#8635</a></td><td>Bacteria</td><td>35</td><td>35</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p005 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01871.1" target="_blank">CUL01871.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0390.html">See VOG0390&#8635</a></td><td>Bacteria</td><td>198</td><td>194</td><td>3</td><td>2</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01870.1" target="_blank">CUL01870.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0393.html">See VOG0393&#8635</a></td><td>Bacteria</td><td>92</td><td>73</td><td>1</td><td>1</td><td>adenylribosylating enzyme [Enterobacteria phage RB14] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01855.1" target="_blank">CUL01855.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0394.html">See VOG0394&#8635</a></td><td>Bacteria+Archaea</td><td>71</td><td>71</td><td>2</td><td>3</td><td>hypothetical protein ModA.2 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01854.1" target="_blank">CUL01854.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0395.html">See VOG0395&#8635</a></td><td>Bacteria</td><td>65</td><td>64</td><td>1</td><td>1</td><td>hypothetical protein ModA.3 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01853.1" target="_blank">CUL01853.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0396.html">See VOG0396&#8635</a></td><td>Bacteria</td><td>58</td><td>58</td><td>1</td><td>1</td><td>Mrh.1 hypothetical protein [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01849.1" target="_blank">CUL01849.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0397.html">See VOG0397&#8635</a></td><td>Bacteria</td><td>200</td><td>200</td><td>3</td><td>7</td><td>dCTP pyrophosphatase [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01844.1" target="_blank">CUL01844.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0398.html">See VOG0398&#8635</a></td><td>Bacteria</td><td>61</td><td>61</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01839.1" target="_blank">CUL01839.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0400.html">See VOG0400&#8635</a></td><td>Bacteria</td><td>65</td><td>65</td><td>2</td><td>2</td><td>sp spackle periplasmic protein [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01836.1" target="_blank">CUL01836.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0401.html">See VOG0401&#8635</a></td><td>Bacteria</td><td>68</td><td>63</td><td>2</td><td>2</td><td>gp61.4 hypothetical protein [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01835.1" target="_blank">CUL01835.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0402.html">See VOG0402&#8635</a></td><td>Bacteria</td><td>103</td><td>103</td><td>1</td><td>2</td><td>putative head vertex assembly chaperone [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01832.1" target="_blank">CUL01832.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0403.html">See VOG0403&#8635</a></td><td>Bacteria</td><td>43</td><td>42</td><td>2</td><td>2</td><td>hypothetical protein ACG-C40_0042 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01830.1" target="_blank">CUL01830.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0405.html">See VOG0405&#8635</a></td><td>Bacteria</td><td>166</td><td>166</td><td>3</td><td>6</td><td>immunity to superinfection membrane protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01828.1" target="_blank">CUL01828.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0408.html">See VOG0408&#8635</a></td><td>Bacteria</td><td>219</td><td>219</td><td>2</td><td>5</td><td>clamp loader subunit [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01822.1" target="_blank">CUL01822.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0409.html">See VOG0409&#8635</a></td><td>Bacteria</td><td>221</td><td>221</td><td>2</td><td>5</td><td>putative sliding clamp DNA polymerase [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01820.1" target="_blank">CUL01820.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0410.html">See VOG0410&#8635</a></td><td>Bacteria</td><td>99</td><td>99</td><td>1</td><td>1</td><td>RNA polymerase binding protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01819.1" target="_blank">CUL01819.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0411.html">See VOG0411&#8635</a></td><td>Bacteria</td><td>53</td><td>53</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01815.1" target="_blank">CUL01815.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0412.html">See VOG0412&#8635</a></td><td>Bacteria</td><td>39</td><td>38</td><td>1</td><td>1</td><td>a-gt alpha glucosyl transferase [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01813.1" target="_blank">CUL01813.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0414.html">See VOG0414&#8635</a></td><td>Bacteria</td><td>64</td><td>64</td><td>1</td><td>1</td><td>hypothetical protein a-gt.3 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01812.1" target="_blank">CUL01812.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0415.html">See VOG0415&#8635</a></td><td>Bacteria</td><td>57</td><td>57</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p069 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01808.1" target="_blank">CUL01808.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0420.html">See VOG0420&#8635</a></td><td>Bacteria</td><td>183</td><td>165</td><td>3</td><td>5</td><td>anaerobic NTP reductase large subunit [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01799.1" target="_blank">CUL01799.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0421.html">See VOG0421&#8635</a></td><td>Bacteria</td><td>53</td><td>53</td><td>1</td><td>1</td><td>inhibitor of host Lon protease [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01797.1" target="_blank">CUL01797.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0426.html">See VOG0426&#8635</a></td><td>Bacteria</td><td>45</td><td>45</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01789.1" target="_blank">CUL01789.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0427.html">See VOG0427&#8635</a></td><td>Bacteria</td><td>49</td><td>49</td><td>1</td><td>1</td><td>hypothetical protein nrdc.5 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01788.1" target="_blank">CUL01788.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0428.html">See VOG0428&#8635</a></td><td>Bacteria</td><td>46</td><td>46</td><td>1</td><td>2</td><td>hypothetical protein ACG-C40_0088 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01786.1" target="_blank">CUL01786.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0429.html">See VOG0429&#8635</a></td><td>Bacteria</td><td>52</td><td>52</td><td>1</td><td>1</td><td>hypothetical protein nrdc.8 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01785.1" target="_blank">CUL01785.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0433.html">See VOG0433&#8635</a></td><td>Bacteria</td><td>94</td><td>94</td><td>1</td><td>1</td><td>lysis inhibition regulator membrane protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01768.1" target="_blank">CUL01768.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0434.html">See VOG0434&#8635</a></td><td>Bacteria</td><td>32</td><td>32</td><td>2</td><td>2</td><td>hypothetical protein Tk.2 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01765.1" target="_blank">CUL01765.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0435.html">See VOG0435&#8635</a></td><td>Bacteria</td><td>67</td><td>67</td><td>2</td><td>2</td><td>hypothetical protein RB32ORF111c [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01763.1" target="_blank">CUL01763.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0436.html">See VOG0436&#8635</a></td><td>Bacteria</td><td>86</td><td>86</td><td>1</td><td>2</td><td>putative endoribonuclease [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01758.1" target="_blank">CUL01758.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0437.html">See VOG0437&#8635</a></td><td>Bacteria</td><td>48</td><td>48</td><td>1</td><td>1</td><td>hypothetical protein Vs.3 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01757.1" target="_blank">CUL01757.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0438.html">See VOG0438&#8635</a></td><td>Bacteria</td><td>93</td><td>93</td><td>3</td><td>3</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01756.1" target="_blank">CUL01756.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0439.html">See VOG0439&#8635</a></td><td>Bacteria</td><td>57</td><td>57</td><td>1</td><td>1</td><td>putative phage protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01755.1" target="_blank">CUL01755.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0440.html">See VOG0440&#8635</a></td><td>Bacteria</td><td>81</td><td>81</td><td>2</td><td>2</td><td>hypothetical protein ACG-C40_0120 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01754.1" target="_blank">CUL01754.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0441.html">See VOG0441&#8635</a></td><td>Bacteria</td><td>54</td><td>54</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01753.1" target="_blank">CUL01753.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0443.html">See VOG0443&#8635</a></td><td>Bacteria</td><td>88</td><td>87</td><td>1</td><td>1</td><td>nudix hydrolase [Enterobacteria phage RB14] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01747.1" target="_blank">CUL01747.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0444.html">See VOG0444&#8635</a></td><td>Bacteria</td><td>50</td><td>50</td><td>1</td><td>1</td><td>hypothetical protein ACG-C40_0126 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01746.1" target="_blank">CUL01746.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0445.html">See VOG0445&#8635</a></td><td>Bacteria</td><td>50</td><td>50</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01745.1" target="_blank">CUL01745.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0447.html">See VOG0447&#8635</a></td><td>Bacteria</td><td>82</td><td>82</td><td>1</td><td>2</td><td>hypothetical protein ACG-C40_0130 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01742.1" target="_blank">CUL01742.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0449.html">See VOG0449&#8635</a></td><td>Bacteria</td><td>65</td><td>65</td><td>1</td><td>2</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01736.1" target="_blank">CUL01736.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0450.html">See VOG0450&#8635</a></td><td>Bacteria</td><td>114</td><td>114</td><td>1</td><td>3</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01732.1" target="_blank">CUL01732.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0451.html">See VOG0451&#8635</a></td><td>Bacteria</td><td>348</td><td>346</td><td>3</td><td>10</td><td>head completion [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01727.1" target="_blank">CUL01727.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0452.html">See VOG0452&#8635</a></td><td>Bacteria</td><td>214</td><td>214</td><td>2</td><td>4</td><td>putative baseplate wedge completion [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01726.1" target="_blank">CUL01726.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0454.html">See VOG0454&#8635</a></td><td>Bacteria</td><td>111</td><td>110</td><td>1</td><td>2</td><td>baseplate wedge subunit [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01721.1" target="_blank">CUL01721.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0456.html">See VOG0456&#8635</a></td><td>Bacteria</td><td>111</td><td>110</td><td>1</td><td>2</td><td>gp10 baseplate wedge subunit and tail pin [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01718.1" target="_blank">CUL01718.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0457.html">See VOG0457&#8635</a></td><td>Bacteria</td><td>111</td><td>110</td><td>1</td><td>2</td><td>putative baseplate wedge subunit and tail pin [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01717.1" target="_blank">CUL01717.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0459.html">See VOG0459&#8635</a></td><td>Bacteria</td><td>108</td><td>108</td><td>1</td><td>2</td><td>phage neck whiskers protein [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01715.1" target="_blank">CUL01715.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0460.html">See VOG0460&#8635</a></td><td>Bacteria</td><td>223</td><td>223</td><td>2</td><td>5</td><td>putative neck protein [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01714.1" target="_blank">CUL01714.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0461.html">See VOG0461&#8635</a></td><td>Bacteria+Archaea</td><td>234</td><td>234</td><td>3</td><td>7</td><td>phage neck protein [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01713.1" target="_blank">CUL01713.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0462.html">See VOG0462&#8635</a></td><td>Bacteria</td><td>223</td><td>223</td><td>1</td><td>5</td><td>tail sheath stabilizer and completion protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01712.1" target="_blank">CUL01712.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0463.html">See VOG0463&#8635</a></td><td>Bacteria</td><td>112</td><td>112</td><td>1</td><td>2</td><td>phage prohead core protein [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01706.1" target="_blank">CUL01706.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0464.html">See VOG0464&#8635</a></td><td>Bacteria</td><td>109</td><td>109</td><td>1</td><td>2</td><td>putative prohead core [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01705.1" target="_blank">CUL01705.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0465.html">See VOG0465&#8635</a></td><td>Bacteria</td><td>215</td><td>215</td><td>2</td><td>4</td><td>prohead core scaffold protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01703.1" target="_blank">CUL01703.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0466.html">See VOG0466&#8635</a></td><td>Bacteria</td><td>349</td><td>230</td><td>2</td><td>5</td><td>precursor of head vertex subunit [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01701.1" target="_blank">CUL01701.1&#10138</a>) major head protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01702.1" target="_blank">CUL01702.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0468.html">See VOG0468&#8635</a></td><td>Bacteria</td><td>65</td><td>65</td><td>3</td><td>4</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01699.1" target="_blank">CUL01699.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0469.html">See VOG0469&#8635</a></td><td>Bacteria</td><td>73</td><td>73</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01698.1" target="_blank">CUL01698.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0471.html">See VOG0471&#8635</a></td><td>Bacteria</td><td>109</td><td>109</td><td>1</td><td>2</td><td>inhibitor of prohead protease [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01696.1" target="_blank">CUL01696.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0473.html">See VOG0473&#8635</a></td><td>Bacteria</td><td>214</td><td>214</td><td>2</td><td>4</td><td>UvsY recombination, repair and ssDNA binding protein [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01691.1" target="_blank">CUL01691.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0474.html">See VOG0474&#8635</a></td><td>Bacteria</td><td>98</td><td>97</td><td>1</td><td>1</td><td>baseplate hub subunit [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01687.1" target="_blank">CUL01687.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0475.html">See VOG0475&#8635</a></td><td>Bacteria</td><td>92</td><td>92</td><td>1</td><td>1</td><td>baseplate hub distal subunit [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01686.1" target="_blank">CUL01686.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0476.html">See VOG0476&#8635</a></td><td>Bacteria</td><td>97</td><td>97</td><td>1</td><td>1</td><td>putative baseplate hub subunit and tail length determinator [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01685.1" target="_blank">CUL01685.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0477.html">See VOG0477&#8635</a></td><td>Bacteria</td><td>211</td><td>211</td><td>2</td><td>4</td><td>putative baseplate tail tube cap [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01684.1" target="_blank">CUL01684.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0479.html">See VOG0479&#8635</a></td><td>Bacteria</td><td>65</td><td>65</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p197 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01682.1" target="_blank">CUL01682.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0480.html">See VOG0480&#8635</a></td><td>Bacteria</td><td>124</td><td>93</td><td>2</td><td>2</td><td>NAD--protein ADP-ribosyltransferase [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01680.1" target="_blank">CUL01680.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0481.html">See VOG0481&#8635</a></td><td>Bacteria</td><td>221</td><td>197</td><td>3</td><td>7</td><td>phage protein [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01676.1" target="_blank">CUL01676.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0482.html">See VOG0482&#8635</a></td><td>Bacteria</td><td>99</td><td>99</td><td>2</td><td>2</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01675.1" target="_blank">CUL01675.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0483.html">See VOG0483&#8635</a></td><td>Bacteria</td><td>62</td><td>62</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p208 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01671.1" target="_blank">CUL01671.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0484.html">See VOG0484&#8635</a></td><td>Bacteria</td><td>70</td><td>70</td><td>1</td><td>1</td><td>hypothetical protein ACG-C40_0206 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01670.1" target="_blank">CUL01670.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0485.html">See VOG0485&#8635</a></td><td>Bacteria</td><td>78</td><td>78</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p211 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01668.1" target="_blank">CUL01668.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0486.html">See VOG0486&#8635</a></td><td>Bacteria</td><td>54</td><td>54</td><td>2</td><td>2</td><td>gp31.2 hypothetical protein [Enterobacteria phage RB51] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01665.1" target="_blank">CUL01665.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0487.html">See VOG0487&#8635</a></td><td>Bacteria</td><td>56</td><td>56</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p216 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01663.1" target="_blank">CUL01663.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0488.html">See VOG0488&#8635</a></td><td>Bacteria</td><td>38</td><td>38</td><td>1</td><td>1</td><td>hypothetical protein [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01661.1" target="_blank">CUL01661.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0489.html">See VOG0489&#8635</a></td><td>Bacteria</td><td>41</td><td>41</td><td>2</td><td>2</td><td>hypothetical protein [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01658.1" target="_blank">CUL01658.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0493.html">See VOG0493&#8635</a></td><td>Bacteria</td><td>93</td><td>93</td><td>1</td><td>1</td><td>putative endonuclease II [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01650.1" target="_blank">CUL01650.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0494.html">See VOG0494&#8635</a></td><td>Bacteria+Archaea</td><td>193</td><td>193</td><td>4</td><td>14</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01647.1" target="_blank">CUL01647.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0495.html">See VOG0495&#8635</a></td><td>Bacteria</td><td>44</td><td>44</td><td>1</td><td>1</td><td>hypothetical protein ACG-C40_0229 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01646.1" target="_blank">CUL01646.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0496.html">See VOG0496&#8635</a></td><td>Bacteria</td><td>222</td><td>222</td><td>2</td><td>7</td><td>dihydrofolate reductase [Enterobacteria phage RB14] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01643.1" target="_blank">CUL01643.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0497.html">See VOG0497&#8635</a></td><td>Bacteria</td><td>33</td><td>33</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01642.1" target="_blank">CUL01642.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0499.html">See VOG0499&#8635</a></td><td>Bacteria</td><td>269</td><td>269</td><td>2</td><td>8</td><td>single-stranded DNA-binding protein [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01637.1" target="_blank">CUL01637.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0507.html">See VOG0507&#8635</a></td><td>Bacteria</td><td>118</td><td>118</td><td>2</td><td>4</td><td>hypothetical protein [Escherichia phage vB_EcoM_JS09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01620.1" target="_blank">CUL01620.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0509.html">See VOG0509&#8635</a></td><td>Bacteria</td><td>76</td><td>76</td><td>1</td><td>1</td><td>putative activator of middle period transcription [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01618.1" target="_blank">CUL01618.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0510.html">See VOG0510&#8635</a></td><td>Bacteria</td><td>97</td><td>97</td><td>1</td><td>1</td><td>disrupts host nucleoid [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01614.1" target="_blank">CUL01614.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0511.html">See VOG0511&#8635</a></td><td>Bacteria</td><td>47</td><td>47</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01613.1" target="_blank">CUL01613.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0676.html">See VOG0676&#8635</a></td><td>Bacteria+Archaea</td><td>258</td><td>257</td><td>3</td><td>12</td><td>RNA ligase [Enterobacteria phage RB51] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01700.1" target="_blank">CUL01700.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0686.html">See VOG0686&#8635</a></td><td>Bacteria</td><td>75</td><td>75</td><td>3</td><td>5</td><td>hypothetical protein Shfl2p277 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01605.1" target="_blank">CUL01605.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0982.html">See VOG0982&#8635</a></td><td>Bacteria</td><td>413</td><td>399</td><td>3</td><td>22</td><td>putative DexA exonuclease A [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01863.1" target="_blank">CUL01863.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0996.html">See VOG0996&#8635</a></td><td>Bacteria+Archaea</td><td>251</td><td>250</td><td>3</td><td>5</td><td>replication factor C small subunit phage DNA polymerase clamp loader subunit [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01821.1" target="_blank">CUL01821.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0997.html">See VOG0997&#8635</a></td><td>Bacteria</td><td>320</td><td>224</td><td>2</td><td>5</td><td>putative baseplate hub assembly catalyst [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01688.1" target="_blank">CUL01688.1&#10138</a>) gp26 baseplate hub subunit [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01689.1" target="_blank">CUL01689.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1001.html">See VOG1001&#8635</a></td><td>Bacteria</td><td>228</td><td>228</td><td>2</td><td>5</td><td>putative portal vertex of the head [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01707.1" target="_blank">CUL01707.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1005.html">See VOG1005&#8635</a></td><td>Bacteria</td><td>439</td><td>223</td><td>2</td><td>5</td><td>base plate-tail tube initiator [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01683.1" target="_blank">CUL01683.1&#10138</a>) tail tube protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01708.1" target="_blank">CUL01708.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1006.html">See VOG1006&#8635</a></td><td>Bacteria</td><td>222</td><td>222</td><td>2</td><td>5</td><td>sigma factor [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01809.1" target="_blank">CUL01809.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1030.html">See VOG1030&#8635</a></td><td>Bacteria</td><td>139</td><td>139</td><td>3</td><td>5</td><td>putative Tk thymidine kinase [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01766.1" target="_blank">CUL01766.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1177.html">See VOG1177&#8635</a></td><td>Bacteria</td><td>202</td><td>200</td><td>2</td><td>6</td><td>hypothetical protein RB32ORF095c [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01779.1" target="_blank">CUL01779.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1382.html">See VOG1382&#8635</a></td><td>Bacteria</td><td>236</td><td>234</td><td>3</td><td>8</td><td>tk.4 hypothetical protein [Enterobacteria phage RB51] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01761.1" target="_blank">CUL01761.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1414.html">See VOG1414&#8635</a></td><td>Bacteria</td><td>177</td><td>177</td><td>3</td><td>3</td><td>hypothetical protein Shfl2p247 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01634.1" target="_blank">CUL01634.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1499.html">See VOG1499&#8635</a></td><td>Bacteria</td><td>70</td><td>70</td><td>2</td><td>3</td><td>hypothetical protein Shfl2p074 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01804.1" target="_blank">CUL01804.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1681.html">See VOG1681&#8635</a></td><td>Bacteria</td><td>212</td><td>212</td><td>2</td><td>3</td><td>putative rega translational repressor protein [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01823.1" target="_blank">CUL01823.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1683.html">See VOG1683&#8635</a></td><td>Bacteria</td><td>105</td><td>105</td><td>1</td><td>2</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01818.1" target="_blank">CUL01818.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1684.html">See VOG1684&#8635</a></td><td>Bacteria</td><td>96</td><td>96</td><td>1</td><td>1</td><td>putative phage protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01810.1" target="_blank">CUL01810.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1775.html">See VOG1775&#8635</a></td><td>Bacteria</td><td>64</td><td>64</td><td>1</td><td>2</td><td>hypothetical protein rI.1 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01767.1" target="_blank">CUL01767.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1799.html">See VOG1799&#8635</a></td><td>Bacteria</td><td>109</td><td>109</td><td>1</td><td>2</td><td>gp57A chaperone long and short tail fiber assembly [Enterobacteria phage RB51] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01731.1" target="_blank">CUL01731.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1821.html">See VOG1821&#8635</a></td><td>Bacteria</td><td>108</td><td>108</td><td>1</td><td>2</td><td>hypothetical protein Shfl2p185 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01693.1" target="_blank">CUL01693.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1829.html">See VOG1829&#8635</a></td><td>Bacteria</td><td>109</td><td>109</td><td>1</td><td>2</td><td>gp31 head assembly co-chaperonin for GroEL [Enterobacteria phage RB14] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01667.1" target="_blank">CUL01667.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1831.html">See VOG1831&#8635</a></td><td>Bacteria</td><td>118</td><td>118</td><td>2</td><td>3</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01666.1" target="_blank">CUL01666.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1836.html">See VOG1836&#8635</a></td><td>Bacteria</td><td>120</td><td>120</td><td>2</td><td>3</td><td>hypothetical protein Shfl2p225 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01654.1" target="_blank">CUL01654.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1837.html">See VOG1837&#8635</a></td><td>Bacteria</td><td>118</td><td>118</td><td>2</td><td>3</td><td>putative membrane protein [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01653.1" target="_blank">CUL01653.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1860.html">See VOG1860&#8635</a></td><td>Bacteria</td><td>193</td><td>193</td><td>2</td><td>3</td><td>loader of gp41 DNA helicase [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01636.1" target="_blank">CUL01636.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1861.html">See VOG1861&#8635</a></td><td>Bacteria</td><td>204</td><td>203</td><td>3</td><td>3</td><td>putative late promoter transcription factor [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01635.1" target="_blank">CUL01635.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1962.html">See VOG1962&#8635</a></td><td>Bacteria</td><td>98</td><td>97</td><td>3</td><td>7</td><td>hypothetical protein ACG-C40_0081 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01795.1" target="_blank">CUL01795.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1975.html">See VOG1975&#8635</a></td><td>Bacteria</td><td>68</td><td>68</td><td>1</td><td>1</td><td>hypothetical protein Shfl1p001 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01602.1" target="_blank">CUL01602.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1979.html">See VOG1979&#8635</a></td><td>Bacteria</td><td>51</td><td>51</td><td>1</td><td>1</td><td>modA.4 hypothetical protein [Enterobacteria phage RB51] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01852.1" target="_blank">CUL01852.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1980.html">See VOG1980&#8635</a></td><td>Bacteria</td><td>48</td><td>48</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01848.1" target="_blank">CUL01848.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1981.html">See VOG1981&#8635</a></td><td>Bacteria</td><td>60</td><td>59</td><td>1</td><td>1</td><td>Soc small outer capsid protein [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01847.1" target="_blank">CUL01847.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1982.html">See VOG1982&#8635</a></td><td>Bacteria</td><td>55</td><td>53</td><td>1</td><td>1</td><td>putative phage protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01841.1" target="_blank">CUL01841.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1984a.html">See VOG1984a&#8635</a></td><td>Bacteria</td><td>46</td><td>46</td><td>1</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01803.1" target="_blank">CUL01803.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1984b.html">See VOG1984b&#8635</a></td><td>Bacteria</td><td>37</td><td>37</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01803.1" target="_blank">CUL01803.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1985.html">See VOG1985&#8635</a></td><td>Bacteria</td><td>33</td><td>33</td><td>1</td><td>1</td><td>putative predicted product (predicted ORF2) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1987.html">See VOG1987&#8635</a></td><td>Bacteria</td><td>44</td><td>44</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01787.1" target="_blank">CUL01787.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1988.html">See VOG1988&#8635</a></td><td>Bacteria</td><td>89</td><td>89</td><td>2</td><td>2</td><td>hypothetical protein ACG-C40_0091 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01783.1" target="_blank">CUL01783.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1989.html">See VOG1989&#8635</a></td><td>Bacteria</td><td>46</td><td>46</td><td>1</td><td>1</td><td>putative predicted product (predicted ORF1) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1993.html">See VOG1993&#8635</a></td><td>Bacteria</td><td>47</td><td>47</td><td>1</td><td>1</td><td>e.4 hypothetical protein [Enterobacteria phage RB14] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01744.1" target="_blank">CUL01744.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1996.html">See VOG1996&#8635</a></td><td>Bacteria</td><td>53</td><td>53</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01677.1" target="_blank">CUL01677.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2000.html">See VOG2000&#8635</a></td><td>Bacteria</td><td>72</td><td>72</td><td>1</td><td>1</td><td>hypothetical protein RB32ORF213c [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01662.1" target="_blank">CUL01662.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2001.html">See VOG2001&#8635</a></td><td>Bacteria</td><td>39</td><td>39</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01659.1" target="_blank">CUL01659.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2002.html">See VOG2002&#8635</a></td><td>Bacteria</td><td>47</td><td>47</td><td>2</td><td>1</td><td>hypothetical protein ACG-C40_0220 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01655.1" target="_blank">CUL01655.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2004.html">See VOG2004&#8635</a></td><td>Bacteria</td><td>58</td><td>58</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p242 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01638.1" target="_blank">CUL01638.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2006.html">See VOG2006&#8635</a></td><td>Bacteria</td><td>95</td><td>95</td><td>1</td><td>1</td><td>tail fiber protein p35 [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01631.1" target="_blank">CUL01631.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2011.html">See VOG2011&#8635</a></td><td>Bacteria</td><td>50</td><td>50</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01610.1" target="_blank">CUL01610.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2012.html">See VOG2012&#8635</a></td><td>Bacteria</td><td>76</td><td>76</td><td>1</td><td>1</td><td>endonuclease IV [Enterobacteria phage RB14] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01607.1" target="_blank">CUL01607.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2190.html">See VOG2190&#8635</a></td><td>Bacteria</td><td>91</td><td>91</td><td>1</td><td>1</td><td>putative phage protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01858.1" target="_blank">CUL01858.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2192.html">See VOG2192&#8635</a></td><td>Bacteria</td><td>52</td><td>52</td><td>1</td><td>1</td><td>hypothetical protein gp46.1 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01816.1" target="_blank">CUL01816.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2194.html">See VOG2194&#8635</a></td><td>Bacteria</td><td>54</td><td>54</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p200 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01679.1" target="_blank">CUL01679.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2195.html">See VOG2195&#8635</a></td><td>Bacteria</td><td>57</td><td>57</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p206 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01673.1" target="_blank">CUL01673.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2196.html">See VOG2196&#8635</a></td><td>Bacteria</td><td>74</td><td>74</td><td>2</td><td>1</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01669.1" target="_blank">CUL01669.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2198.html">See VOG2198&#8635</a></td><td>Bacteria</td><td>84</td><td>84</td><td>2</td><td>2</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01640.1" target="_blank">CUL01640.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2201.html">See VOG2201&#8635</a></td><td>Bacteria</td><td>48</td><td>48</td><td>1</td><td>1</td><td>hypothetical protein ACG-C40_0271 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01606.1" target="_blank">CUL01606.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2422.html">See VOG2422&#8635</a></td><td>Bacteria</td><td>90</td><td>90</td><td>1</td><td>1</td><td>valyl-tRNA synthetase modifier [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01760.1" target="_blank">CUL01760.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2428.html">See VOG2428&#8635</a></td><td>Bacteria</td><td>66</td><td>66</td><td>1</td><td>1</td><td>nrdC.9 hypothetical protein [Enterobacteria phage RB14] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01784.1" target="_blank">CUL01784.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2434.html">See VOG2434&#8635</a></td><td>Bacteria</td><td>59</td><td>59</td><td>3</td><td>4</td><td>55.4 gene product [Enterobacteria phage IME08] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01805.1" target="_blank">CUL01805.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2444.html">See VOG2444&#8635</a></td><td>Bacteria</td><td>49</td><td>49</td><td>1</td><td>1</td><td>transcription modulator [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01851.1" target="_blank">CUL01851.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2453.html">See VOG2453&#8635</a></td><td>Bacteria</td><td>61</td><td>61</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01660.1" target="_blank">CUL01660.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2457.html">See VOG2457&#8635</a></td><td>Bacteria</td><td>29</td><td>29</td><td>1</td><td>1</td><td>IpI internal head protein [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01733.1" target="_blank">CUL01733.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3291.html">See VOG3291&#8635</a></td><td>Bacteria</td><td>54</td><td>54</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p083 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01796.1" target="_blank">CUL01796.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3292.html">See VOG3292&#8635</a></td><td>Bacteria</td><td>62</td><td>62</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01734.1" target="_blank">CUL01734.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4543.html">See VOG4543&#8635</a></td><td>Bacteria+Archaea</td><td>8131</td><td>2497</td><td>8</td><td>79</td><td>putative packaging and recombination endonuclease VII [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01798.1" target="_blank">CUL01798.1&#10138</a>) Srd anti-sigma factor, putative [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01857.1" target="_blank">CUL01857.1&#10138</a>) hypothetical protein ACG-C40_0133 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01737.1" target="_blank">CUL01737.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4544.html">See VOG4544&#8635</a></td><td>Bacteria+Archaea</td><td>2299</td><td>2281</td><td>3</td><td>68</td><td>putative terminase subunit nuclease and ATPase [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01710.1" target="_blank">CUL01710.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4546.html">See VOG4546&#8635</a></td><td>Bacteria</td><td>1289</td><td>1002</td><td>3</td><td>31</td><td>putative short tail fiber protein [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01716.1" target="_blank">CUL01716.1&#10138</a>) phage long tail fiber proximal subunit [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01632.1" target="_blank">CUL01632.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4548.html">See VOG4548&#8635</a></td><td>Bacteria+Archaea</td><td>1078</td><td>1003</td><td>4</td><td>33</td><td>RNA-DNA and DNA-DNA helicase [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01695.1" target="_blank">CUL01695.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4549.html">See VOG4549&#8635</a></td><td>Bacteria+Archaea</td><td>869</td><td>650</td><td>3</td><td>21</td><td>thioredoxin [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01793.1" target="_blank">CUL01793.1&#10138</a>) putative NrdH glutaredoxin [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01802.1" target="_blank">CUL01802.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4550.html">See VOG4550&#8635</a></td><td>Bacteria+Archaea</td><td>832</td><td>684</td><td>3</td><td>23</td><td>base plate wedge subunit [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01690.1" target="_blank">CUL01690.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4551.html">See VOG4551&#8635</a></td><td>Bacteria</td><td>815</td><td>805</td><td>3</td><td>17</td><td>putative DNA primase [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01840.1" target="_blank">CUL01840.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4552.html">See VOG4552&#8635</a></td><td>Bacteria</td><td>759</td><td>583</td><td>3</td><td>28</td><td>endonuclease V, N-glycosylase UV repair enzyme [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01750.1" target="_blank">CUL01750.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4562.html">See VOG4562&#8635</a></td><td>Bacteria</td><td>467</td><td>467</td><td>3</td><td>14</td><td>putative ribonucleotide reductase B subunit [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01649.1" target="_blank">CUL01649.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4563.html">See VOG4563&#8635</a></td><td>Bacteria</td><td>451</td><td>385</td><td>3</td><td>20</td><td>phage capsid and scaffold protein [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01697.1" target="_blank">CUL01697.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4565.html">See VOG4565&#8635</a></td><td>Bacteria</td><td>407</td><td>406</td><td>3</td><td>25</td><td>phage baseplate hub [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01748.1" target="_blank">CUL01748.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4575.html">See VOG4575&#8635</a></td><td>Bacteria</td><td>336</td><td>336</td><td>2</td><td>8</td><td>recombination endonuclease subunit [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01814.1" target="_blank">CUL01814.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4577.html">See VOG4577&#8635</a></td><td>Bacteria+Archaea</td><td>306</td><td>305</td><td>3</td><td>5</td><td>DNA polymerase [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01825.1" target="_blank">CUL01825.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4584.html">See VOG4584&#8635</a></td><td>Bacteria</td><td>225</td><td>225</td><td>3</td><td>3</td><td>baseplate hub subunit and tail lysozyme [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01725.1" target="_blank">CUL01725.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4590.html">See VOG4590&#8635</a></td><td>Bacteria</td><td>201</td><td>201</td><td>3</td><td>5</td><td>rIIB protector from prophage-induced early lysis [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01604.1" target="_blank">CUL01604.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4591.html">See VOG4591&#8635</a></td><td>Bacteria</td><td>187</td><td>180</td><td>3</td><td>2</td><td>putative baseplate wedge tail fiber connector [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01719.1" target="_blank">CUL01719.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4594.html">See VOG4594&#8635</a></td><td>Bacteria</td><td>166</td><td>166</td><td>2</td><td>5</td><td>RIIA protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01603.1" target="_blank">CUL01603.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4595.html">See VOG4595&#8635</a></td><td>Bacteria</td><td>160</td><td>159</td><td>2</td><td>5</td><td>DNA end protector protein [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01728.1" target="_blank">CUL01728.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4617.html">See VOG4617&#8635</a></td><td>Bacteria</td><td>77</td><td>77</td><td>2</td><td>2</td><td>hypothetical protein RB32ORF122c [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01752.1" target="_blank">CUL01752.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4625.html">See VOG4625&#8635</a></td><td>Bacteria</td><td>60</td><td>60</td><td>1</td><td>1</td><td>tail fiber protein p36 [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01630.1" target="_blank">CUL01630.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4694.html">See VOG4694&#8635</a></td><td>Bacteria+Archaea</td><td>241</td><td>225</td><td>3</td><td>10</td><td>DNA adenine methylase [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01843.1" target="_blank">CUL01843.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4695.html">See VOG4695&#8635</a></td><td>Bacteria</td><td>233</td><td>232</td><td>2</td><td>5</td><td>base plate wedge [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01722.1" target="_blank">CUL01722.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4696.html">See VOG4696&#8635</a></td><td>Bacteria</td><td>224</td><td>224</td><td>2</td><td>5</td><td>terminase DNA packaging enzyme small subunit [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01711.1" target="_blank">CUL01711.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4697.html">See VOG4697&#8635</a></td><td>Bacteria</td><td>219</td><td>219</td><td>2</td><td>5</td><td>tail completion and sheath stabilizer protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01729.1" target="_blank">CUL01729.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4698.html">See VOG4698&#8635</a></td><td>Bacteria</td><td>175</td><td>175</td><td>2</td><td>6</td><td>RNA ligase 1 and tail fiber attachment catalyst [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01651.1" target="_blank">CUL01651.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4700.html">See VOG4700&#8635</a></td><td>Bacteria</td><td>147</td><td>147</td><td>3</td><td>6</td><td>hypothetical protein Vs.1 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01759.1" target="_blank">CUL01759.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4702.html">See VOG4702&#8635</a></td><td>Bacteria</td><td>111</td><td>111</td><td>1</td><td>2</td><td>gp8 baseplate wedge subunit [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01720.1" target="_blank">CUL01720.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4703.html">See VOG4703&#8635</a></td><td>Bacteria</td><td>111</td><td>111</td><td>2</td><td>2</td><td>hypothetical protein a-gt.4 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01811.1" target="_blank">CUL01811.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4706.html">See VOG4706&#8635</a></td><td>Bacteria</td><td>94</td><td>94</td><td>1</td><td>1</td><td>UvsW RNA-DNA and DNA-DNA helicase, ATPase [Enterobacteria phage T4] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01694.1" target="_blank">CUL01694.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4709.html">See VOG4709&#8635</a></td><td>Bacteria</td><td>92</td><td>92</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01807.1" target="_blank">CUL01807.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4712.html">See VOG4712&#8635</a></td><td>Bacteria</td><td>83</td><td>83</td><td>1</td><td>2</td><td>putative Alc inhibitor of host transcription [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01652.1" target="_blank">CUL01652.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4719.html">See VOG4719&#8635</a></td><td>Bacteria</td><td>77</td><td>77</td><td>1</td><td>1</td><td>modifier of suppressor T4 tRNAs [Enterobacteria phage RB14] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01868.1" target="_blank">CUL01868.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4721.html">See VOG4721&#8635</a></td><td>Bacteria</td><td>73</td><td>73</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01619.1" target="_blank">CUL01619.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4723.html">See VOG4723&#8635</a></td><td>Bacteria</td><td>63</td><td>62</td><td>1</td><td>1</td><td>mRNA metabolism modulator [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01869.1" target="_blank">CUL01869.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4738.html">See VOG4738&#8635</a></td><td>Bacteria</td><td>50</td><td>50</td><td>1</td><td>1</td><td>hypothetical protein ACG-C40_0204 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01672.1" target="_blank">CUL01672.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4742.html">See VOG4742&#8635</a></td><td>Bacteria</td><td>45</td><td>45</td><td>1</td><td>1</td><td>ndd.2a hypothetical protein [Enterobacteria phage RB51] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01611.1" target="_blank">CUL01611.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4744.html">See VOG4744&#8635</a></td><td>Bacteria</td><td>43</td><td>43</td><td>1</td><td>1</td><td>hypothetical protein ACG-C40_0219 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01656.1" target="_blank">CUL01656.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4747.html">See VOG4747&#8635</a></td><td>Bacteria</td><td>41</td><td>41</td><td>1</td><td>1</td><td>hypothetical protein MobD.3 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01772.1" target="_blank">CUL01772.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4749.html">See VOG4749&#8635</a></td><td>Bacteria</td><td>39</td><td>39</td><td>1</td><td>1</td><td>phage protein [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01740.1" target="_blank">CUL01740.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4754.html">See VOG4754&#8635</a></td><td>Bacteria</td><td>37</td><td>37</td><td>1</td><td>1</td><td>ndd.2a hypothetical protein [Enterobacteria phage RB51] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01611.1" target="_blank">CUL01611.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4758.html">See VOG4758&#8635</a></td><td>Bacteria</td><td>35</td><td>35</td><td>1</td><td>1</td><td>hypothetical protein ACG-C40_0219 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01656.1" target="_blank">CUL01656.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4762.html">See VOG4762&#8635</a></td><td>Bacteria</td><td>32</td><td>32</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p005 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01871.1" target="_blank">CUL01871.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4764.html">See VOG4764&#8635</a></td><td>Bacteria</td><td>28</td><td>28</td><td>2</td><td>2</td><td>hypothetical protein ACG-C40_0069 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01806.1" target="_blank">CUL01806.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4786.html">See VOG4786&#8635</a></td><td>Bacteria</td><td>16</td><td>16</td><td>1</td><td>1</td><td>hypothetical protein SP18_gp281 [Shigella phage SP18] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01608.1" target="_blank">CUL01608.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4859.html">See VOG4859&#8635</a></td><td>Bacteria</td><td>45</td><td>45</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01692.1" target="_blank">CUL01692.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5129.html">See VOG5129&#8635</a></td><td>Bacteria</td><td>56</td><td>50</td><td>3</td><td>3</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01735.1" target="_blank">CUL01735.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5130.html">See VOG5130&#8635</a></td><td>Bacteria</td><td>54</td><td>44</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p237 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01644.1" target="_blank">CUL01644.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5132.html">See VOG5132&#8635</a></td><td>Bacteria</td><td>47</td><td>47</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p085 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01794.1" target="_blank">CUL01794.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5159.html">See VOG5159&#8635</a></td><td>Bacteria</td><td>37</td><td>37</td><td>1</td><td>1</td><td>hypothetical protein Shfl2p102 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01773.1" target="_blank">CUL01773.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5177.html">See VOG5177&#8635</a></td><td>Bacteria</td><td>34</td><td>34</td><td>1</td><td>1</td><td>hypothetical protein [Enterobacteria phage ime09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01751.1" target="_blank">CUL01751.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5209.html">See VOG5209&#8635</a></td><td>Bacteria</td><td>32</td><td>32</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage e11/2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01867.1" target="_blank">CUL01867.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5226.html">See VOG5226&#8635</a></td><td>Bacteria</td><td>29</td><td>29</td><td>1</td><td>1</td><td>putative phage protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01641.1" target="_blank">CUL01641.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5228.html">See VOG5228&#8635</a></td><td>Bacteria</td><td>28</td><td>28</td><td>1</td><td>1</td><td>hypothetical protein ACG-C40_0099 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01775.1" target="_blank">CUL01775.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5237.html">See VOG5237&#8635</a></td><td>Bacteria</td><td>27</td><td>27</td><td>1</td><td>1</td><td>hypothetical protein RB32ORF133c [Enterobacteria phage RB32] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01739.1" target="_blank">CUL01739.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5333.html">See VOG5333&#8635</a></td><td>Bacteria</td><td>19</td><td>19</td><td>3</td><td>3</td><td>hypothetical protein PG7_094 [Enterobacter phage PG7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01781.1" target="_blank">CUL01781.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5344.html">See VOG5344&#8635</a></td><td>Bacteria</td><td>19</td><td>19</td><td>1</td><td>1</td><td>putative small outer capsid protein soc.1 [Shigella phage Shfl2] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01846.1" target="_blank">CUL01846.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5351.html">See VOG5351&#8635</a></td><td>Bacteria</td><td>19</td><td>19</td><td>1</td><td>1</td><td>putative phage protein [Escherichia phage wV7] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01738.1" target="_blank">CUL01738.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5405.html">See VOG5405&#8635</a></td><td>Bacteria</td><td>17</td><td>17</td><td>1</td><td>1</td><td>hypothetical protein RB14ORF29 [Enterobacteria phage RB14] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01845.1" target="_blank">CUL01845.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG6147.html">See VOG6147&#8635</a></td><td>Bacteria</td><td>9</td><td>9</td><td>1</td><td>1</td><td>hypothetical protein ACG-C40_0093 [Enterobacteria phage vB_EcoM_ACG-C40] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01780.1" target="_blank">CUL01780.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG6150.html">See VOG6150&#8635</a></td><td>Bacteria</td><td>9</td><td>9</td><td>1</td><td>1</td><td>hypothetical protein [Escherichia phage vB_EcoM_JS09] (<a href="http://www.ncbi.nlm.nih.gov/protein/CUL01624.1" target="_blank">CUL01624.1&#10138</a>) </td></tr>
+
+		</tbody>
+
+		</table>
+
+	</body>
+
+
+	<center><div id="footer1"><a href="../home.html#"><b>HOME</b></a> | <a href="../genometable.html#"><b>GENOME TABLE</b></a> | <a href="../VOGbigtable.html#"><b>VOG TABLE</b></a> | <a href="../downloads.html#"><b>DOWNLOADS</b></a> | <a href="../tutorial.html#"><b>TUTORIAL</b></a> | <a href="#" ><b>BACK TO TOP</b></a></div></center>
+
+	<hr>
+
+	<td width=60% align=center><font color="#000000"><font size=2>
+	<br>
+	<center><img src="../phage-icon.png" width="70" height="80"><center>
+	Prokaryotic Virus Orthologous Groups<br>
+	Website updated in May 2017. Genomes updated in May 2016.<br>
+	</font></font>
+	</td></center>
+</html>

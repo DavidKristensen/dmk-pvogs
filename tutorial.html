@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Prokaryotic Virus Orthologous Groups</title>
+		<link rel="stylesheet" type="text/css" href="home.css">
+		<!-- Google Analytics!!! -->
+		
+		<script  type="text/javascript" src="GoogleAnalytics.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Prokaryotic Virus Orthologous Groups</h1>
+		</header>
+		<style>
+			/*a[href^="genomes"]:after { */
+			/* CSS for internal links */
+			/*content: url(https://upload.wikimedia.org/wikipedia/commons/7/78/Redirect-link-ltr-icon.png);} */
+			/*a[href^="http://"]:after { */
+			/*CSS for external links */
+			/*content: url(https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);}
+			a[href^="https://"]:after {
+			content: url(https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);} */
+
+
+		</style>
+		
+			<h4>1. Introduction</h4>
+			<p><a href="https://www.ncbi.nlm.nih.gov/pubmed/25428365" target="_blank">Cluster of Orthologous Groups (COGs)&#10138</a> are the most widely known and used system to study genes shared between several bacteria and archaea, dating all the way back to the origin of the cell. In today's post-genomics era where it is impossible to perform experimental analysis on each and every single protein, these collections of genes (representing all the descendants from a common ancestral gene) aid research by allowing inference of the properties of all of the members from the experimentally studied characterization of just a few of them. The <span id="num">pVOGs</span> (<span id="num">P</span>rokaryotic <span id="num">V</span>irus <span id="num">O</span>rthologous <span id="num">G</span>roups) database attempts to bring the success of this approach to the viruses that infect bacteria and archaea. These evolutionary gene families are useful for annotation of protein function, as datasets for phylogenetic analysis, as molecular markers of the presence of phages and archaeal viruses in a sample (e.g., within their cellular hosts as proviruses), and others - see publications at <a href="home.html#publication">HOME</a>.</p>
+			
+			<p>The current set of pVOGs was updated by Dr. Kristensen's team at the University of Iowa (Iowa City, IA) and is now made available in a user-friendly format, the <span id="num">Prokaryotic Virus Orthologous Groups database</span>.</p>
+			
+			<p>&#10004 We provide a large number of pre-computed sets of orthologous genes obtained from comparisons amongst 2,993 phage complete genomes.</p>
+			<p>&#10004 Our dataset includes all 77 Archaea phages available in Refseq and Nucleotide databases by June 2016.</p>
+			<p>&#10004 Prokaryotic viruses carrying four types of genetic material (dsDNA, dsRNA, ssDNA and ssRNA) are represented in our dataset.</p>
+			<p>&#10004 Our powerful approach of collecting 3-way reciprocal best matches provides reliable clusters of orthologous genes to be employed by our users in their research.</p>
+
+
+			<hr>
+			<style>
+			hr {margin: 30px 0 0 0;}
+			</style>
+			
+			<h4>2. Getting Started</h4>
+			<p>The main page of the <span id="num">Prokaryotic Virus Orthologous Groups database</span> provides a brief introduction about this database, shows the overall statistics regarding the current pVOGs collection and its data increase compared to the previous version. You may also find related publications of previous releases, about the new algorithm development and also some practical applications of using pVOGs. Clicking on the <a href="genometable.html" target="_blank">Genome Table</a> link at the top of the main page will take you to a page listing all phage genomes used in this pVOGs dataset and describing their protein and pVOGs content. The home page also provides a link to the <a href="VOGbigtable.html" target="_blank">VOG table</a> describing overall statistics regarding all pVOGs obtained for the updated dataset. At the bottom of all pages you may find links to the home page <a href="home.html" target="_blank">(HOME)</a>, to the Genome Table <a href="genometable.html" target="_blank">(GENOME TABLE)</a>, to the VOG Table <a href="VOGbigtable.html" target="_blank">(VOG TABLE)</a>, to the download's page <a href="downloads.html" target="_blank">(DOWNLOADS)</a>, to go back to the top of the current page <a href="tutorial.html" target="_blank">(BACK TO TOP)</a> and to view this tutorial <a href="home.html" target="_blank">(TUTORIAL)</a>.</p>
+			
+			<p>Please, note that virus genomic data present in the pVOGs database was current as of May 2016. However, taxonomic nomenclature of viruses changes over time (e.g., <a href="http://link.springer.com/article/10.1007/s00705-015-2728-0" target="_blank">Taxonomy of prokaryotic viruses: update from the ICTV bacterial and archaeal viruses subcommittee&#10138</a>), and already these names no longer reflect the current status as approved by the <a href="http://www.ictvonline.org/" target="_blank">International Committee on Taxonomy of Viruses&#10138</a>. Other data associated with these genomes such as gene annotations (functional information, start/stop coordinates, metadata, or even their presence/absence in a genome) may also change over time. Clicking on the links available in the webpages, such as for species name or genome accession, will redirect you to the <a href="https://www.ncbi.nlm.nih.gov/taxonomy" target="_blank">NCBI Taxonomy&#10138</a> or <a href="https://www.ncbi.nlm.nih.gov/nuccore" target="_blank">NCBI Nucleotide&#10138</a> database, respectively, containing the most up-to-date data that NCBI has available.</p>
+
+			<p>Viral Quotient (VQ) values were made available for the VOGs and are shown as the second column of the <a href="VOGbigtable.html" target="_blank">VOG Table</a> and at the top right of each individual VOG table (for instance, check it for <a href="VOGtables/VOG0008.html" target="_blank">VOG0008</a>).</p>
+			<p>What VQs are?</p>
+			<p>The VQ is a measure of a gene family presence in viruses and/or prokaryotes, i.e., "virusness". The VQ of a VOG was measured as the quotient of the frequency of matches to viral genomes versus the sum of the frequency of matches to viral and cellular genomes, i.e.:</p> 
+			<center><p>Equation: <img src="equation.png" style="width:10%;height:5%" align= "middle">&nbsp in which: <img src="equation1.png" style="width:15%;height:7%" align="middle"> and <img src="equation2.png" style="width:15%;height:7%" align="middle"></center></p>
+			<p>Therefore, the VQ value is within a range from 0 to 1. Higher VQ values mean that the gene family is mostly found in viruses.</p>
+
+			<hr>
+			<h4>3. Genome Table - Overview of Virus Genomes included in this Database</h4>
+			<p>A <a href="genometable.html" target="_blank">Genome Table</a> provides comprehensive information regarding every phage genome selected for building our pVOGs dataset. This table describes the species name for each virus (Species), its respective genome accession number from NCBI database (Accession), genome size (Genome Size), number of proteins in each genome (Proteins), number of pVOGs in which such species shows at least one protein sequence belonging to VOGs. Also, the table shows information regarding the host organism from which the phage was isolated according to the NCBI annotation (Host), type of genetic material (Genetic Material) and taxonomy information according to the NCBI Taxonomy database (Order, Family and Genus). Clicking on species name will take you to the NCBI Taxonomy database and clicking on the accession will take you to the NCBI Nucleotide database. Clicking on the numbers of VOGs identified in a species will take you to a page, which describes how many VOGs were identified for that particular phage as well the number of protein sequences that were annotated for each identified VOG.</p>
+			<p> Links in tables are followed by an external link icon &#10138 when the hyperlink points at an external source domain such as NCBI Genbank or Protein database.</p> 
+			<center><img src="images_tutorial/genometable.png" style="width:90%;height:45%" border="4"></center>
+			
+			<hr>
+			<h4>4. VOG Table - Overview of pVOGs obtained for this updated Dataset</h4>
+			<p>A <a href="VOGbigtable.html" target="_blank">VOG Table</a> provides a description of each pVOG obtained for the 2016 dataset. This table describes the number of proteins (Number of Proteins) and number of genomes (Number of Genomes) present in each VOG as well describes the diversity of phage families (Number of Families) and genera (Number of Genera) covered by such pVOGs. For each pVOG, this table summarizes whether the pVOG is exclusively present in viruses of Bacteria, viruses of Archaea or whether the VOG is shared among phages of these host domains. In addition, we provided in this table the mapping of the new pVOGs dataset 2016 to the previous POGs dataset 2013 in order to help tracking proteins/pVOGs for users of the previous POGs dataset (2013).
+			<center><img src="images_tutorial/VOgtable.png" style="width:90%;height:45%" border="4"></center>
+			
+			<hr>
+			<h4>5. Individual Genome Table - Exploring identified VOGs for each Genome</h4>
+			<p>Clicking on the number of VOGs identified for a virus in the <a href="genometable.html" target="_blank">Genome Table</a> will take you to a page that lists all VOGs in which the respective virus has at least one protein sequence belonging to. At the same page, you will also find a list of protein accession numbers of such virus that were assigned to a cluster of orthologous groups. Clicking on the protein accession number will take you to the NCBI Protein database.</p>
+			
+			<center><img src="images_tutorial/IndividualGenomeTable.png" style="width:90%;height:45%" border="4"></center>
+			
+			
+			<hr>
+			<h4>6. Individual VOG Tables - Exploring a list of phage genomes with sequences in a particular VOG</h4>
+			<p>Clicking on the VOG number on the aforementioned table will take you to a page in which the protein family assigned to that pVOG is described as well as the species diversity for such pVOG. Clicking on the genome accession or protein accession links will take you to the NCBI Nucleotide or NCBI Protein database, respectively.</p>
+			
+			<center><img id="num2" src="images_tutorial/IndividualVOGtable.png" style="width:90%;height:45%" border="4"></center>
+			
+			<hr>
+			<h4>7. Quick tip - How to find the VOGs of your interest in pVOGs database?</h4>
+			<p>You may find your VOG of interest through two distinct ways in the database.</p>
+			<p><span id="num">Searching by Virus Name or Genome Accession:</span> If you are interested in VOGs of a particular virus, the <a href="genometable.html" target="_blank">Genome Table</a> will be most helpful for you. Searching by virus species name or by genome accession, you will find a column named VOGs indicating the number of VOGs identified for that virus. Clicking on the link in this column you will get access to a list of all VOGs identified for that genome. Clicking on any of the VOGs listed on this page will give you access to a description of that VOG, including all other viruses that also have a protein sequence in the same VOG of your virus of interest.</p>
+			<p><span id="num">Searching by Protein Sequence Annotation:</span> If you are interested in VOGs in which a particular protein sequence is present, the most recommended way to find the VOGs is accessing the <a href="VOGbigtable.html" target="_blank">VOG Table</a>. This table lists all VOGs present in the current version of this database and provides the protein annotation of sequences present in each VOG. You may find the protein of your interest searching by protein annotation.</p>
+			
+			<hr>
+			<h4>8. Downloads</h4>
+			<p>Clicking on the <a href="downloads.html" target="_blank">Downloads</a> at the main page will take you to files in tabular format, multifasta alignments and HMM profiles available for download.</p>		
+						
+		</body>
+	
+	
+	<center><div id="footer1"><a href="home.html#"><b>HOME</b></a> | <a href="genometable.html#"><b>GENOME TABLE</b></a> | <a href="VOGbigtable.html#"><b>VOG TABLE</b></a> | <a href="downloads.html#"><b>DOWNLOADS</b></a> | <a href="newsupdate.html#"><b>NEWS & UPDATES</b></a> | <a href="tutorial.html#"><b>TUTORIAL</b></a> | <a href="#" ><b>BACK TO TOP</b></a></div></center>
+	<hr>
+	<center><td width=60% align=center><font color="#000000"><font size=2>
+			
+	<br>
+	<center><img src="phage-icon.png" width="70" height="80"><center>
+	Prokaryotic Virus Orthologous Groups<br>
+	Website updated in May 2017. Genomes updated in May 2016.<br>
+	</font></font>
+	</center>	
+</html>				

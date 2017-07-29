@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Prokaryotic Virus Orthologous Groups</title>
+
+		<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+
+		<link rel="stylesheet" type="text/css" href="../datatables.css">
+
+		<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+		<script type="text/javascript" src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
+
+		<!-- My javascript!!! -->
+
+		<script  type="text/javascript" src="../table_java.js"></script>
+
+		<!-- Google Analytics!!! -->
+
+		<script  type="text/javascript" src="../GoogleAnalytics.js"></script>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1>Prokaryotic Virus Orthologous Groups</h1>
+
+		</header>
+
+		<article>
+
+			<h2>Individual Genome Table - List of proteins conserved in VOGs for this genome:</h2>
+
+			<p id="para">* NOTE: The following search box is a <i>"contains character"</i> rather than an <i>"exact match"</i> tool.</p>
+
+
+		</article>
+
+		<style type="text/css">
+
+			p#id {text-align: justified; margin-left: 1cm;}
+
+			.tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa; margin-left: 1cm; margin-right: 1cm;}
+
+			.tg td{font-family:Arial, sans-serif;font-size:14px;padding:7px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+
+			.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#cc7914;border-top-width:1px;border-bottom-width:1px; text-align:center}
+
+			.tg .tg-g8a9{background-color:#F0F8FF;font-family:Verdana, Geneva, sans-serif !important;}
+
+			.tg .tg-xt0r{font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;text-align:center}
+
+			.tg .tg-xt0r1{font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;text-align:left}
+
+			.tg .tg-xgst{background-color:#f8f4ec;font-family:Verdana, Geneva, sans-serif !important; text-align:center}
+
+			.tg .tg-xgst1{background-color:#f8f4ec;font-family:Verdana, Geneva, sans-serif !important; text-align:left}
+
+			.tg .tg-zemy{font-family:Verdana, Geneva, sans-serif !important;;text-align:center}
+
+			.tg .tg-zemy1{font-family:Verdana, Geneva, sans-serif !important;;text-align:left}
+
+			.tg .tg-9vto{font-family:Verdana, Geneva, sans-serif !important;}
+
+			.tg tr:hover td { background: #c3a87b !important;}
+
+			@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+
+		</style>
+
+		<center><div class="tg-wrap"><table class="tg">
+
+			<tr>
+			<th class="tg-xt0r">Species</th><th class="tg-xt0r">Genome Accession</th><th class="tg-xt0r">Genome Size (bp)</th><th class="tg-xt0r">Proteins</th><th class="tg-xt0r">VOGs</th><th class="tg-xt0r">Host</th><th class="tg-xt0r">Host Domain</th><th class="tg-xt0r">Genetic Material</th><th class="tg-xt0r">Order</th><th class="tg-xt0r">Family</th><th class="tg-xt0r">Genus</th>
+			</tr>
+			<tr>
+			<td class="tg-zemy"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1590550" target="_blank">Escherichia phage RCS47&#10138</a></td><td class="tg-zemy"><a href="https://www.ncbi.nlm.nih.gov/nuccore/FO818745" target="_blank">FO818745&#10138</a></td><td class="tg-zemy">115154</td><td class="tg-zemy">138</td><td class="tg-zemy">94</td><td class="tg-zemy">Escherichia coli</td><td class="tg-zemy">Bacteria</td><td class="tg-zemy">dsDNA viruses, no RNA stage</td><td class="tg-zemy">Caudovirales</td><td class="tg-zemy"><a href="http://viralzone.expasy.org/all_by_species/140.html" target="_blank">Myoviridae&#10138</a></td><td class="tg-zemy"><a href="http://viralzone.expasy.org/all_by_species/505.html" target="_blank">Punalikevirus&#10138</a></td>
+			</tr>
+		</table></center>
+
+		<table id="POGs_table" class="display" cellspacing="0" width="100%">
+			<thead>
+				<tr><th>VOGs</th><th>Host Domain</th><th>Number of Proteins</th><th>Number of Genomes</th><th>Number of Virus Families</th><th>Number of Virus Genera</th><th>Protein Annotation (Protein Accession)</th></tr>
+</thead>
+			<thead class="filters">
+				<tr><th>VOGs</th><th>Host Domain</th><th>Number of Proteins</th><th>Number of Genomes</th><th>Number of Virus Families</th><th>Number of Virus Genera</th><th>Protein Annotation (Protein Accession)</th></tr>
+			</thead>
+		<tbody>
+
+			<tr><td><a href="../VOGtables/VOG0025.html">See VOG0025&#8635</a></td><td>Bacteria+Archaea</td><td>1644</td><td>1247</td><td>3</td><td>32</td><td>Replicative DNA helicase (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90822.1" target="_blank">CDN90822.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0156.html">See VOG0156&#8635</a></td><td>Bacteria+Archaea</td><td>105</td><td>105</td><td>3</td><td>10</td><td>Serine/threonine-protein phosphatase (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90835.1" target="_blank">CDN90835.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0223.html">See VOG0223&#8635</a></td><td>Bacteria</td><td>6</td><td>6</td><td>2</td><td>2</td><td>Modulator protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90746.1" target="_blank">CDN90746.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0226.html">See VOG0226&#8635</a></td><td>Bacteria</td><td>536</td><td>535</td><td>3</td><td>20</td><td>Single-stranded DNA-binding protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90753.1" target="_blank">CDN90753.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0227.html">See VOG0227&#8635</a></td><td>Bacteria</td><td>140</td><td>128</td><td>3</td><td>8</td><td>Tail fiber assembly protein GpU (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90782.1" target="_blank">CDN90782.1&#10138</a>) Tail fiber assembly protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90783.1" target="_blank">CDN90783.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0236.html">See VOG0236&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>2</td><td>1</td><td>conserved protein of unknown function UpfA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90811.1" target="_blank">CDN90811.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0238.html">See VOG0238&#8635</a></td><td>Bacteria</td><td>137</td><td>137</td><td>3</td><td>8</td><td>conserved protein of unknown function UpfC (PAAR motif) (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90815.1" target="_blank">CDN90815.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0239.html">See VOG0239&#8635</a></td><td>Bacteria</td><td>47</td><td>47</td><td>3</td><td>4</td><td>Recombination-associated protein RdgC (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90817.1" target="_blank">CDN90817.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0242.html">See VOG0242&#8635</a></td><td>Bacteria</td><td>8</td><td>8</td><td>2</td><td>2</td><td>putative morphogenic function protein PmgO (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90833.1" target="_blank">CDN90833.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0243.html">See VOG0243&#8635</a></td><td>Bacteria+Archaea</td><td>365</td><td>328</td><td>4</td><td>17</td><td>putative P1 acid phosphatase Pap (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90839.1" target="_blank">CDN90839.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0244.html">See VOG0244&#8635</a></td><td>Bacteria</td><td>19</td><td>19</td><td>3</td><td>3</td><td>conserved protein of unknown function (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90840.1" target="_blank">CDN90840.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0248.html">See VOG0248&#8635</a></td><td>Bacteria</td><td>11</td><td>11</td><td>2</td><td>3</td><td>DNA repair protein HumD (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90852.1" target="_blank">CDN90852.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0249.html">See VOG0249&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>2</td><td>2</td><td>Toxin Doc (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90854.1" target="_blank">CDN90854.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0251.html">See VOG0251&#8635</a></td><td>Bacteria</td><td>11</td><td>11</td><td>3</td><td>2</td><td>conserved protein of unknown function PdcB (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90856.1" target="_blank">CDN90856.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0327.html">See VOG0327&#8635</a></td><td>Bacteria</td><td>264</td><td>264</td><td>3</td><td>12</td><td>putative morphogenetic protein PmgM (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90831.1" target="_blank">CDN90831.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0630.html">See VOG0630&#8635</a></td><td>Bacteria</td><td>43</td><td>43</td><td>3</td><td>5</td><td>putative RNA-binding protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90846.1" target="_blank">CDN90846.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0944.html">See VOG0944&#8635</a></td><td>Bacteria</td><td>33</td><td>26</td><td>3</td><td>6</td><td>ISSod13 family transposase (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90769.1" target="_blank">CDN90769.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0985.html">See VOG0985&#8635</a></td><td>Bacteria+Archaea</td><td>61</td><td>61</td><td>3</td><td>6</td><td>partition protein parA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90808.1" target="_blank">CDN90808.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1026.html">See VOG1026&#8635</a></td><td>Bacteria+Archaea</td><td>74</td><td>51</td><td>4</td><td>8</td><td>Transposase ISEc46, IS605 family (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90800.1" target="_blank">CDN90800.1&#10138</a>) transposase IS605 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90772.1" target="_blank">CDN90772.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3310.html">See VOG3310&#8635</a></td><td>Bacteria</td><td>25</td><td>25</td><td>3</td><td>4</td><td>conserved protein of unknown function (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90843.1" target="_blank">CDN90843.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4544.html">See VOG4544&#8635</a></td><td>Bacteria+Archaea</td><td>2299</td><td>2281</td><td>3</td><td>68</td><td>terminase B protein PacB (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90859.1" target="_blank">CDN90859.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4546.html">See VOG4546&#8635</a></td><td>Bacteria</td><td>1289</td><td>1002</td><td>3</td><td>31</td><td>Tail fibrer protein GpS (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90784.1" target="_blank">CDN90784.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4552.html">See VOG4552&#8635</a></td><td>Bacteria</td><td>759</td><td>583</td><td>3</td><td>28</td><td>Antirepressor protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90860.1" target="_blank">CDN90860.1&#10138</a>) antirepressor protein Ant2 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90797.1" target="_blank">CDN90797.1&#10138</a>) Protein kilA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90798.1" target="_blank">CDN90798.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4565.html">See VOG4565&#8635</a></td><td>Bacteria</td><td>407</td><td>406</td><td>3</td><td>25</td><td>Lysozyme (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90752.1" target="_blank">CDN90752.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4593.html">See VOG4593&#8635</a></td><td>Bacteria+Archaea</td><td>166</td><td>166</td><td>3</td><td>14</td><td>putative serine protease (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90821.1" target="_blank">CDN90821.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4596.html">See VOG4596&#8635</a></td><td>Bacteria</td><td>156</td><td>105</td><td>3</td><td>5</td><td>conserved protein of unknown function (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90841.1" target="_blank">CDN90841.1&#10138</a>) conserved protein of unknown function (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90844.1" target="_blank">CDN90844.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4653.html">See VOG4653&#8635</a></td><td>Bacteria</td><td>26</td><td>26</td><td>1</td><td>5</td><td>base plate protein Gp5 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90824.1" target="_blank">CDN90824.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4695.html">See VOG4695&#8635</a></td><td>Bacteria</td><td>233</td><td>232</td><td>2</td><td>5</td><td>Baseplate structural protein BplA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90787.1" target="_blank">CDN90787.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4860.html">See VOG4860&#8635</a></td><td>Bacteria</td><td>44</td><td>43</td><td>1</td><td>2</td><td>Transglycosylase SLT domain protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90789.1" target="_blank">CDN90789.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4943.html">See VOG4943&#8635</a></td><td>Bacteria</td><td>10</td><td>9</td><td>3</td><td>3</td><td>putative predicted product (predicted ORF3) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5052.html">See VOG5052&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>2</td><td>2</td><td>partition protein ParB (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90807.1" target="_blank">CDN90807.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5083.html">See VOG5083&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>putative DNA adenine methyltransferase and helicase, darB (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90748.1" target="_blank">CDN90748.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5084.html">See VOG5084&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>Antirepressor protein Ant1 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90796.1" target="_blank">CDN90796.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG6825.html">See VOG6825&#8635</a></td><td>Bacteria</td><td>6</td><td>6</td><td>3</td><td>3</td><td>conserved protein of unknown function (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90847.1" target="_blank">CDN90847.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG6965.html">See VOG6965&#8635</a></td><td>Bacteria</td><td>6</td><td>5</td><td>2</td><td>2</td><td>transposase InsH, IS5D, IS5 family (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90872.1" target="_blank">CDN90872.1&#10138</a>) transposase InsH, IS5D, IS5 family (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90865.1" target="_blank">CDN90865.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG7103.html">See VOG7103&#8635</a></td><td>Bacteria</td><td>6</td><td>6</td><td>2</td><td>1</td><td>Cre-associated protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90741.1" target="_blank">CDN90741.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG7436.html">See VOG7436&#8635</a></td><td>Bacteria</td><td>5</td><td>5</td><td>1</td><td>1</td><td>putative morphogenetic protein PmgG (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90803.1" target="_blank">CDN90803.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG7444.html">See VOG7444&#8635</a></td><td>Bacteria</td><td>5</td><td>5</td><td>3</td><td>2</td><td>DNA polymerase III subunit theta (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90851.1" target="_blank">CDN90851.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG8237.html">See VOG8237&#8635</a></td><td>Bacteria</td><td>5</td><td>5</td><td>2</td><td>1</td><td>RecA-dependent nuclease (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90744.1" target="_blank">CDN90744.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG8295.html">See VOG8295&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>1</td><td>1</td><td>Lysis determinant LydD, putative holin (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90751.1" target="_blank">CDN90751.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG8296.html">See VOG8296&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>1</td><td>1</td><td>putative repressor protein Hxr (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90770.1" target="_blank">CDN90770.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG8297.html">See VOG8297&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>1</td><td>1</td><td>PmgA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90788.1" target="_blank">CDN90788.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG8298.html">See VOG8298&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>2</td><td>1</td><td>replication protein RepA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90810.1" target="_blank">CDN90810.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG8299.html">See VOG8299&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>1</td><td>1</td><td>putative morphogenic protein PmgS (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90838.1" target="_blank">CDN90838.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG8848.html">See VOG8848&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>2</td><td>2</td><td>putative predicted product (predicted ORF2) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9191.html">See VOG9191&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>1</td><td>1</td><td>Recombinase (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90742.1" target="_blank">CDN90742.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9192.html">See VOG9192&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>1</td><td>1</td><td>Putative portal protein Prt (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90749.1" target="_blank">CDN90749.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9193.html">See VOG9193&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>2</td><td>1</td><td>lysis determining protein LydA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90777.1" target="_blank">CDN90777.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9194.html">See VOG9194&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>2</td><td>2</td><td>putative morphogenetic protein PmgL (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90830.1" target="_blank">CDN90830.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9195.html">See VOG9195&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>2</td><td>1</td><td>Antitoxin Phd (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90853.1" target="_blank">CDN90853.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9196.html">See VOG9196&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>1</td><td>2</td><td>Tail fiber protein Sc (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90781.1" target="_blank">CDN90781.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9198.html">See VOG9198&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>2</td><td>2</td><td>conserved protein of unknown function (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90842.1" target="_blank">CDN90842.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9358.html">See VOG9358&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>Putative lysogeny establishment protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90743.1" target="_blank">CDN90743.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9359.html">See VOG9359&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>Maturation control protein (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90745.1" target="_blank">CDN90745.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9360.html">See VOG9360&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>putative protein Ulx (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90747.1" target="_blank">CDN90747.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9361.html">See VOG9361&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>putative head processing protein Pro (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90750.1" target="_blank">CDN90750.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9362.html">See VOG9362&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>conserved protein of unknown function, DdrB (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90771.1" target="_blank">CDN90771.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9363.html">See VOG9363&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>conserved protein of unknown function DdrA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90773.1" target="_blank">CDN90773.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9364.html">See VOG9364&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>DarA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90774.1" target="_blank">CDN90774.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9365.html">See VOG9365&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>conserved protein of unknown function Hdf (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90775.1" target="_blank">CDN90775.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9366.html">See VOG9366&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>lysis determining protein LydB (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90776.1" target="_blank">CDN90776.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9367.html">See VOG9367&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>Tail fiber protein R (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90785.1" target="_blank">CDN90785.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9368.html">See VOG9368&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>Putative tail tube structural protein gp16 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90786.1" target="_blank">CDN90786.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9369.html">See VOG9369&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>PmgB (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90790.1" target="_blank">CDN90790.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9370.html">See VOG9370&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>major tail tube protein TubB (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90791.1" target="_blank">CDN90791.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9371.html">See VOG9371&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>PmgC (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90792.1" target="_blank">CDN90792.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9372.html">See VOG9372&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>2</td><td>2</td><td>conserved membrane protein of unknown function (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90793.1" target="_blank">CDN90793.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9373.html">See VOG9373&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>2</td><td>2</td><td>putative outer membrane lipoprotein (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90794.1" target="_blank">CDN90794.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9374.html">See VOG9374&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>cell division repressor Icd (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90795.1" target="_blank">CDN90795.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9375.html">See VOG9375&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>Replication protein repL (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90799.1" target="_blank">CDN90799.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9376.html">See VOG9376&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>putative baseplate structural protein, BplB (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90802.1" target="_blank">CDN90802.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9377.html">See VOG9377&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>tail tube protein Gp21 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90804.1" target="_blank">CDN90804.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9378.html">See VOG9378&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>tail sheath protein Gp22 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90805.1" target="_blank">CDN90805.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9379.html">See VOG9379&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>major head protein Gp23 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90806.1" target="_blank">CDN90806.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9380.html">See VOG9380&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>conserved protein of unknown function PpfA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90813.1" target="_blank">CDN90813.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9381.html">See VOG9381&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>conserved protein of unknown function UpfB (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90814.1" target="_blank">CDN90814.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9382.html">See VOG9382&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>conserved protein of unknown function Uhr (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90816.1" target="_blank">CDN90816.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9383.html">See VOG9383&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>putative glycosyltransferase, Dbn (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90823.1" target="_blank">CDN90823.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9384.html">See VOG9384&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>tail length protein Gp6 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90825.1" target="_blank">CDN90825.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9385.html">See VOG9385&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>baseplate protein Gp24 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90826.1" target="_blank">CDN90826.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9386.html">See VOG9386&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>tail stability protein Gp7 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90827.1" target="_blank">CDN90827.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9387.html">See VOG9387&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>tail stability protein Gp25 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90828.1" target="_blank">CDN90828.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9388.html">See VOG9388&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>base plate protein Gp26 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90829.1" target="_blank">CDN90829.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9389.html">See VOG9389&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>putative morphogenetic protein PmgN (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90832.1" target="_blank">CDN90832.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9390.html">See VOG9390&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>putative morphogenetic protein PmgP (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90834.1" target="_blank">CDN90834.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9391.html">See VOG9391&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>putative morphogenic function protein PmgQ (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90836.1" target="_blank">CDN90836.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9392.html">See VOG9392&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>putative morphogenic function protein PmgR (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90837.1" target="_blank">CDN90837.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9393.html">See VOG9393&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>conserved protein of unknown function PdcA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90855.1" target="_blank">CDN90855.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9394.html">See VOG9394&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>Late promoter-activating protein Lpa (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90857.1" target="_blank">CDN90857.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9395.html">See VOG9395&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>Terminase A protein PacA (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90858.1" target="_blank">CDN90858.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9396.html">See VOG9396&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>repressor protein C1 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90861.1" target="_blank">CDN90861.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9397.html">See VOG9397&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>C1 inactivator protein Coi (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90862.1" target="_blank">CDN90862.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9398.html">See VOG9398&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>putative predicted product (predicted ORF1) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9420.html">See VOG9420&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>1</td><td>transposase IS1 (<a href="http://www.ncbi.nlm.nih.gov/protein/CDN90866.1" target="_blank">CDN90866.1&#10138</a>) </td></tr>
+
+		</tbody>
+
+		</table>
+
+	</body>
+
+
+	<center><div id="footer1"><a href="../home.html#"><b>HOME</b></a> | <a href="../genometable.html#"><b>GENOME TABLE</b></a> | <a href="../VOGbigtable.html#"><b>VOG TABLE</b></a> | <a href="../downloads.html#"><b>DOWNLOADS</b></a> | <a href="../tutorial.html#"><b>TUTORIAL</b></a> | <a href="#" ><b>BACK TO TOP</b></a></div></center>
+
+	<hr>
+
+	<td width=60% align=center><font color="#000000"><font size=2>
+	<br>
+	<center><img src="../phage-icon.png" width="70" height="80"><center>
+	Prokaryotic Virus Orthologous Groups<br>
+	Website updated in May 2017. Genomes updated in May 2016.<br>
+	</font></font>
+	</td></center>
+</html>

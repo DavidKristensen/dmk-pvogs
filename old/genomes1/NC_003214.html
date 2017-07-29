@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Prokaryotic Virus Orthologous Groups</title>
+
+		<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+
+		<link rel="stylesheet" type="text/css" href="../datatables.css">
+
+		<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+		<script type="text/javascript" src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
+
+		<!-- My javascript!!! -->
+
+		<script  type="text/javascript" src="../table_java.js"></script>
+
+		<!-- Google Analytics!!! -->
+
+		<script  type="text/javascript" src="../GoogleAnalytics.js"></script>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1>Prokaryotic Virus Orthologous Groups</h1>
+
+		</header>
+
+		<article>
+
+			<h2>Individual Genome Table - List of proteins conserved in VOGs for this genome:</h2>
+
+			<p id="para">* NOTE: The following search box is a <i>"contains character"</i> rather than an <i>"exact match"</i> tool.</p>
+
+
+		</article>
+
+		<style type="text/css">
+
+			p#id {text-align: justified; margin-left: 1cm;}
+
+			.tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa; margin-left: 1cm; margin-right: 1cm;}
+
+			.tg td{font-family:Arial, sans-serif;font-size:14px;padding:7px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+
+			.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#cc7914;border-top-width:1px;border-bottom-width:1px; text-align:center}
+
+			.tg .tg-g8a9{background-color:#F0F8FF;font-family:Verdana, Geneva, sans-serif !important;}
+
+			.tg .tg-xt0r{font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;text-align:center}
+
+			.tg .tg-xt0r1{font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;text-align:left}
+
+			.tg .tg-xgst{background-color:#f8f4ec;font-family:Verdana, Geneva, sans-serif !important; text-align:center}
+
+			.tg .tg-xgst1{background-color:#f8f4ec;font-family:Verdana, Geneva, sans-serif !important; text-align:left}
+
+			.tg .tg-zemy{font-family:Verdana, Geneva, sans-serif !important;;text-align:center}
+
+			.tg .tg-zemy1{font-family:Verdana, Geneva, sans-serif !important;;text-align:left}
+
+			.tg .tg-9vto{font-family:Verdana, Geneva, sans-serif !important;}
+
+			.tg tr:hover td { background: #c3a87b !important;}
+
+			@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+
+		</style>
+
+		<center><div class="tg-wrap"><table class="tg">
+
+			<tr>
+			<th class="tg-xt0r">Species</th><th class="tg-xt0r">Genome Accession</th><th class="tg-xt0r">Genome Size (bp)</th><th class="tg-xt0r">Proteins</th><th class="tg-xt0r">VOGs</th><th class="tg-xt0r">Host</th><th class="tg-xt0r">Host Domain</th><th class="tg-xt0r">Genetic Material</th><th class="tg-xt0r">Order</th><th class="tg-xt0r">Family</th><th class="tg-xt0r">Genus</th>
+			</tr>
+			<tr>
+			<td class="tg-zemy"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176106" target="_blank">Sulfolobus islandicus filamentous virus&#10138</a></td><td class="tg-zemy"><a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_003214" target="_blank">NC_003214&#10138</a></td><td class="tg-zemy">40900</td><td class="tg-zemy">74</td><td class="tg-zemy">46</td><td class="tg-zemy">Sulfolobus islandicus</td><td class="tg-zemy">Archaea</td><td class="tg-zemy">dsDNA viruses, no RNA stage</td><td class="tg-zemy">Ligamenvirales</td><td class="tg-zemy"><a href="http://viralzone.expasy.org/all_by_species/143.html" target="_blank">Lipothrixviridae&#10138</a></td><td class="tg-zemy"><a href="http://viralzone.expasy.org/all_by_species/265.html" target="_blank">Betalipothrixvirus&#10138</a></td>
+			</tr>
+		</table></center>
+
+		<table id="POGs_table" class="display" cellspacing="0" width="100%">
+			<thead>
+				<tr><th>VOGs</th><th>Host Domain</th><th>Number of Proteins</th><th>Number of Genomes</th><th>Number of Virus Families</th><th>Number of Virus Genera</th><th>Protein Annotation (Protein Accession)</th></tr>
+</thead>
+			<thead class="filters">
+				<tr><th>VOGs</th><th>Host Domain</th><th>Number of Proteins</th><th>Number of Genomes</th><th>Number of Virus Families</th><th>Number of Virus Genera</th><th>Protein Annotation (Protein Accession)</th></tr>
+			</thead>
+		<tbody>
+
+			<tr><td><a href="../VOGtables/VOG0267.html">See VOG0267&#8635</a></td><td>Bacteria+Archaea</td><td>82</td><td>60</td><td>5</td><td>5</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445678.1" target="_blank">NP_445678.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3349.html">See VOG3349&#8635</a></td><td>Bacteria+Archaea</td><td>65</td><td>58</td><td>7</td><td>9</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445678.1" target="_blank">NP_445678.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3501.html">See VOG3501&#8635</a></td><td>Archaea</td><td>4</td><td>4</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445667.1" target="_blank">NP_445667.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3502.html">See VOG3502&#8635</a></td><td>Archaea</td><td>5</td><td>5</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445668.1" target="_blank">NP_445668.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3503.html">See VOG3503&#8635</a></td><td>Archaea</td><td>5</td><td>5</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445669.1" target="_blank">NP_445669.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3504.html">See VOG3504&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445670.1" target="_blank">NP_445670.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3505.html">See VOG3505&#8635</a></td><td>Bacteria+Archaea</td><td>29</td><td>29</td><td>4</td><td>4</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445671.1" target="_blank">NP_445671.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3506.html">See VOG3506&#8635</a></td><td>Bacteria+Archaea</td><td>7</td><td>7</td><td>2</td><td>1</td><td>putative helicase (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445672.1" target="_blank">NP_445672.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3507.html">See VOG3507&#8635</a></td><td>Archaea</td><td>5</td><td>5</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445673.1" target="_blank">NP_445673.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3508.html">See VOG3508&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445674.1" target="_blank">NP_445674.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3509.html">See VOG3509&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445676.1" target="_blank">NP_445676.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3510.html">See VOG3510&#8635</a></td><td>Archaea</td><td>5</td><td>5</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445677.1" target="_blank">NP_445677.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3512.html">See VOG3512&#8635</a></td><td>Archaea</td><td>4</td><td>4</td><td>2</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445679.1" target="_blank">NP_445679.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3513.html">See VOG3513&#8635</a></td><td>Archaea</td><td>8</td><td>8</td><td>2</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445681.1" target="_blank">NP_445681.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3514.html">See VOG3514&#8635</a></td><td>Archaea</td><td>4</td><td>4</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445686.1" target="_blank">NP_445686.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3515.html">See VOG3515&#8635</a></td><td>Archaea</td><td>7</td><td>7</td><td>1</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445688.1" target="_blank">NP_445688.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3516.html">See VOG3516&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445689.1" target="_blank">NP_445689.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3517.html">See VOG3517&#8635</a></td><td>Archaea</td><td>4</td><td>4</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445690.1" target="_blank">NP_445690.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3518.html">See VOG3518&#8635</a></td><td>Bacteria+Archaea</td><td>20</td><td>20</td><td>6</td><td>5</td><td>DNA binding protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445691.1" target="_blank">NP_445691.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3519.html">See VOG3519&#8635</a></td><td>Archaea</td><td>5</td><td>5</td><td>1</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445693.1" target="_blank">NP_445693.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3520.html">See VOG3520&#8635</a></td><td>Archaea</td><td>4</td><td>4</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445694.1" target="_blank">NP_445694.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3521.html">See VOG3521&#8635</a></td><td>Archaea</td><td>4</td><td>4</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445695.1" target="_blank">NP_445695.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3522.html">See VOG3522&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445697.1" target="_blank">NP_445697.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3523.html">See VOG3523&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445698.1" target="_blank">NP_445698.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3524.html">See VOG3524&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445699.1" target="_blank">NP_445699.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3525.html">See VOG3525&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445700.1" target="_blank">NP_445700.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3526.html">See VOG3526&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445701.1" target="_blank">NP_445701.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3527.html">See VOG3527&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445702.1" target="_blank">NP_445702.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3528.html">See VOG3528&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445703.1" target="_blank">NP_445703.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3529.html">See VOG3529&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445704.1" target="_blank">NP_445704.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3530.html">See VOG3530&#8635</a></td><td>Archaea</td><td>11</td><td>10</td><td>2</td><td>4</td><td>glycosyl transferase-related protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445705.1" target="_blank">NP_445705.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3531.html">See VOG3531&#8635</a></td><td>Archaea</td><td>7</td><td>7</td><td>1</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445706.1" target="_blank">NP_445706.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3532.html">See VOG3532&#8635</a></td><td>Bacteria+Archaea</td><td>32</td><td>19</td><td>4</td><td>4</td><td>putative group 1 glycosyl transferase (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445708.1" target="_blank">NP_445708.1&#10138</a>) first mannosyl transferase-related protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445726.1" target="_blank">NP_445726.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3533.html">See VOG3533&#8635</a></td><td>Archaea</td><td>15</td><td>14</td><td>2</td><td>3</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445709.1" target="_blank">NP_445709.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3534.html">See VOG3534&#8635</a></td><td>Archaea</td><td>5</td><td>5</td><td>2</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445725.1" target="_blank">NP_445725.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3537.html">See VOG3537&#8635</a></td><td>Archaea</td><td>13</td><td>13</td><td>2</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445728.1" target="_blank">NP_445728.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3538.html">See VOG3538&#8635</a></td><td>Archaea</td><td>9</td><td>9</td><td>2</td><td>4</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445729.1" target="_blank">NP_445729.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3539.html">See VOG3539&#8635</a></td><td>Archaea</td><td>4</td><td>4</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445730.1" target="_blank">NP_445730.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3540.html">See VOG3540&#8635</a></td><td>Archaea</td><td>5</td><td>5</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445733.1" target="_blank">NP_445733.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3541.html">See VOG3541&#8635</a></td><td>Archaea</td><td>5</td><td>5</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445734.1" target="_blank">NP_445734.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3542.html">See VOG3542&#8635</a></td><td>Archaea</td><td>6</td><td>6</td><td>1</td><td>1</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445735.1" target="_blank">NP_445735.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3543.html">See VOG3543&#8635</a></td><td>Archaea</td><td>4</td><td>4</td><td>2</td><td>3</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445737.1" target="_blank">NP_445737.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3544.html">See VOG3544&#8635</a></td><td>Archaea</td><td>4</td><td>4</td><td>1</td><td>1</td><td>putative predicted product (predicted ORF1) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4548.html">See VOG4548&#8635</a></td><td>Bacteria+Archaea</td><td>1078</td><td>1003</td><td>4</td><td>33</td><td>putative helicase (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445687.1" target="_blank">NP_445687.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9744.html">See VOG9744&#8635</a></td><td>Archaea</td><td>3</td><td>3</td><td>2</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445707.1" target="_blank">NP_445707.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9745.html">See VOG9745&#8635</a></td><td>Archaea</td><td>3</td><td>3</td><td>1</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_445719.1" target="_blank">NP_445719.1&#10138</a>) </td></tr>
+
+		</tbody>
+
+		</table>
+
+	</body>
+
+
+	<center><div id="footer1"><a href="../home.html#"><b>HOME</b></a> | <a href="../genometable.html#"><b>GENOME TABLE</b></a> | <a href="../VOGbigtable.html#"><b>VOG TABLE</b></a> | <a href="../downloads.html#"><b>DOWNLOADS</b></a> | <a href="../tutorial.html#"><b>TUTORIAL</b></a> | <a href="#" ><b>BACK TO TOP</b></a></div></center>
+
+	<hr>
+
+	<td width=60% align=center><font color="#000000"><font size=2>
+	<br>
+	<center><img src="../phage-icon.png" width="70" height="80"><center>
+	Prokaryotic Virus Orthologous Groups<br>
+	Website updated in May 2017. Genomes updated in May 2016.<br>
+	</font></font>
+	</td></center>
+</html>

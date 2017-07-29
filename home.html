@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=2">
+		<title>Prokaryotic Virus Orthologous Groups</title>
+		<link rel="stylesheet" type="text/css" href="home.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<!-- Google Analytics!!! -->
+		
+		<script  type="text/javascript" src="GoogleAnalytics.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Prokaryotic Virus Orthologous Groups</h1>
+		</header>
+
+			<style>
+				hr.style15 {
+					border-top: 4px double #8c8b8b;
+					text-align: center;
+				}
+			</style>
+			<center><p><span id="num"><a href="newsupdate.html"><img src="new.png" width="30" height="30"></a> <a style="text-decoration:none;color:#000000;" href="newsupdate.html">New features added to the pVOGs Database</a>: &nbsp<i class="material-icons" style="font-size:30px;color:darkorange;">new_releases</i> Viral Quotient measurements <img src="js-logo.png" width="55" height="30"> Searchable javascript tables</span> (it may take a moment to load when a large content is displayed)</p></center>
+			<hr class="style15">
+			<h2>Welcome to the pVOGs Database</h2>
+			<br><p><q><i>Viruses are the most abundant biological entities on earth and encompass a vast amount of genetic diversity. The recent rapid increase in the number of sequenced viral genomes has created unprecedented opportunities for gaining new insight into the structure and evolution of the virosphere.</i></q> Kristensen DM et al., 2013.</p>
+			<p>This website provides access to the most recent database <span id="num">9,518</span> orthologous groups shared among nearly <span id="num">3,000</span> thousand complete genomes of viruses that infect bacteria and archaea (<span id="num">P</span>rokaryotic <span id="num">V</span>irus <span id="num">O</span>rthologous <span id="num">G</span>roups, or <span id="num">pVOGs</span>). The set of pVOGs keeps growing and may have a wide range of applications in different areas of life sciences including taxonomy, evolutionary genetics, genomic epidemiology, metagenomics, systems biology, ecology, among others.</p>
+			<p>This webpage is a resource portal which provides access to the updated set of pVOGs<sup>1</sup>, previously known as POGs (Phage Orthologous Groups):</p>
+			<p>You will find information regarding all prokaryotic virus genomes used for this update in the following <a href="genometable.html"><span id="num">Genome Table</span></a>. General description of all pVOGs obtained for this update will be find at the <a href="VOGbigtable.html"><span id="num">VOG Table</span></a>. Accessions of genomes and proteins belonging to each identified pVOG may be found following the links present in both tables. The Viral Quotient (VQ) measurements have been added to the individual VOG tables, such as <a href="VOGtables/VOG0008.html"><span id="num">VOG0008</span></a> showing a VQ of 1 (a gene only present in viruses<sup>2</sup>), and to the VOG Table. The <a href="downloads.html"><span id="num">Downloads</span></a> page provides VOG alignments, HMM profiles and files of all VOG tables in tabular delimited format for downloading. The history of updates and new releases can be followed at <a href="newsupdate.html"><span id="num">News & Updates</a> page. The <a href="tutorial.html"><span id="num">Tutorial</span></a> page describing how to navigate in this website is also provided.</p>
+			<p><sup>1</sup> Would you like to know more about how pVOGs were obtained? Read about them here <a href="https://www.ncbi.nlm.nih.gov/pubmed/27789703" target="_blank">Grazziotin et al., 2017. &#10138</a></p>			
+			<p><sup>2</sup> Read more about Viral Quotient measurements: methodology was previously described by <a href="http://www.ncbi.nlm.nih.gov/pubmed/23222723" target="_blank">Kristensen et al., 2013. &#10138</a></p><br>
+			
+			<h3>Importance and Applications of pVOGs</h3>
+			<br><p>&#10004 To understand the history of viral protein families</p>
+			<p>&#10004 To aid in evolutionary classification of known phages</p>
+			<p>&#10004 To be applied in the reconstruction of ancestral phage genomes</p>
+			<p>&#10004 To help annotate orthologs from poorly characterized genomes</p>
+			<p>&#10004 To identify virus-specific genes that could be used as diagnostic markers of prokaryotic viruses presence in a given environment</p>
+			
+			<p id="para2">For instance, using pVOGs in aforementioned research fields may improve the development of phage-based tools and our understanding on:</p>
+			
+			<p>&#10004 Phage therapy</p>
+			<p>&#10004 Host genome dynamics</p>
+			<p>&#10004 Bacterial pathogenesis</p>
+			<p>&#10004 Important roles of phages in distinct ecosystems</p>
+			
+			<p id="para2">Have fun working with pVOGs!</p><br>
+			
+				
+				
+			<h3>Dataset Statistics</h3>
+			<br><p>The first pVOGs dataset (known as POGs at that time) was <a href="http://www.ncbi.nlm.nih.gov/pubmed/16490276" target="_blank">released in 2006 &#10138</a>. Since then the set of pVOGs has been updated several times and it is now available in its 5<sup>th</sup> release. The number of prokaryotic virus genomes included in the current dataset has nearly tripled in size since the <a href="http://www.ncbi.nlm.nih.gov/pubmed/23222723" target="_blank">last released dataset (2013) &#10138</a>.</p><br>
+			
+			<center><img src="VOGIncreaseYears.png" width="700" height="600"><center>
+			 
+			<br><p>The following table shows the overall increase of collected genomes, protein sequences analyzed (a combination of proteins already annotated in NCBI and our GeneMark prediction [<a href="http://www.ncbi.nlm.nih.gov/pubmed/11410670" target="_blank">GeneMarkS &#10138</a>]) and obtained pVOGs between the last released dataset <a href="ftp://ftp.ncbi.nlm.nih.gov/pub/kristensen/thousandgenomespogs/" target="_blank">(See: POGs 2013) &#10138</a> and the current dataset.</p><br>
+			
+<style type="text/css">
+.tg  {border-collapse:collapse; border-spacing:0;border-color:#aaa; margin-left: 1cm; margin-right: 1cm;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#cc7914;border-top-width:1px;border-bottom-width:1px; text-align:left}
+.tg .tg-g8a9{background-color:#F0F8FF;font-family:Verdana, Geneva, sans-serif !important;}
+.tg .tg-xt0r{font-weight:bold;font-family:Verdana, Geneva, sans-serif !important; text-align:left}
+.tg .tg-xgst{background-color:#f8f4ec;font-family:Verdana, Geneva, sans-serif !important; text-align:left}
+.tg .tg-zemy{font-family:Verdana, Geneva, sans-serif !important;;text-align:left}
+.tg .tg-9vto{font-family:Verdana, Geneva, sans-serif !important;}
+.tg tr:hover td { background: #c3a87b !important;}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+/*a[href^="http://"]:after { */
+/*CSS for external links */
+/*content: url(https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);}*/
+/*a[href^="https://"]:after {*/
+/*content: url(https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);}
+a[href^="ftp://"]:after {
+content: url(https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);}*/
+</style>
+
+<div class="tg-wrap"><table class="tg">
+				<thead>
+					<tr>
+						<th class="tg-xt0r"> </th>
+						<th class="tg-xt0r">POGs 2013</th>
+						<th class="tg-xt0r">pVOGs 2016</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td colspan="4">
+							<p>* POGs 2013 Information source: <a href="http://www.ncbi.nlm.nih.gov/pubmed/23222723" target="_blank">Kristensen et al., 2013. doi: 10.1128/JB.01801-12 &#10138</a></p>
+							<p>* pVOGs database Information source: <a href="https://nar.oxfordjournals.org/content/early/2016/10/25/nar.gkw975.full?sid=c96e4278-eab7-4a25-b76d-dbec555b83ef" target="_blank">Grazziotin et al., 2017. doi: 10.1093/nar/gkw975 &#10138</a></p>
+						</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td class="tg-zemy">Genomes</td>
+						<td class="tg-zemy">1,027</td>
+						<td class="tg-zemy">2,993</td>
+					</tr>
+					<tr>
+						<td class="tg-xgst">Refseq Genomes</td>
+						<td class="tg-xgst">642</td>
+						<td class="tg-xgst">1,986</td>
+					</tr>
+					<tr>
+						<td class="tg-zemy">Bacterial Viruses</td>
+						<td class="tg-zemy">987</td>
+						<td class="tg-zemy">2,912</td>
+					</tr>
+					<tr>
+						<td class="tg-xgst">Archaeal Viruses</td>
+						<td class="tg-xgst">36</td>
+						<td class="tg-xgst">77</td>
+					</tr>
+					<tr>
+						<td class="tg-zemy">dsDNA viruses, no RNA stage</td>
+						<td class="tg-zemy">827</td>
+						<td class="tg-zemy">2,707</td>
+					</tr>
+					<tr>
+						<td class="tg-xgst">dsRNA viruses</td>
+						<td class="tg-xgst">5</td>
+						<td class="tg-xgst">6</td>
+					</tr>
+					<tr>
+						<td class="tg-zemy">ssDNA viruses</td>
+						<td class="tg-zemy">106</td>
+						<td class="tg-zemy">152</td>
+					</tr>
+					<tr>
+						<td class="tg-xgst">ssRNA viruses</td>
+						<td class="tg-xgst">12</td>
+						<td class="tg-xgst">17</td>
+					</tr>
+					<tr>
+						<td class="tg-zemy">unclassified viruses</td>
+						<td class="tg-zemy">77</td>
+						<td class="tg-zemy">111</td>
+					</tr>
+					<tr>
+						<td class="tg-xgst">Supplementary protein prediction</td>
+						<td class="tg-xgst">3,259</td>
+						<td class="tg-xgst">10,353</td>
+					</tr>
+					<tr>
+						<td class="tg-zemy">Protein Repertoire</td>
+						<td class="tg-zemy">94,065</td>
+						<td class="tg-zemy">296,595</td>
+					</tr>
+					<tr>
+						<td class="tg-xgst">POGs/pVOGs</td>
+						<td class="tg-xgst">4,542</td>
+						<td class="tg-xgst">9,518</td>
+					</tr>
+				</tbody>
+			</table></div><br><br>
+			
+			<br>
+			<h3 id="publication">Publications</h3><br>
+			
+			<h4 id="italics">Database and foundations</h4><br>
+			
+			<p><span id="num">Prokaryotic Virus Orthologous Groups (pVOGs): a resource for comparative genomics and protein family annotation. <a href="https://www.ncbi.nlm.nih.gov/pubmed/27789703" target="_blank">Pubmed &#10138</a></span></p>
+			<p>Grazziotin AL, Koonin EV, Kristensen DM. Nucleic Acids Res. 2017 Jan 4;45(Database issue):D491-D498. doi: 10.1093/nar/gkw975. Epub 2016 Oct 26.</p>
+			
+			<p><span id="num">Expanded microbial genome coverage and improved protein family annotation in the COG database. <a href="https://www.ncbi.nlm.nih.gov/pubmed/25428365" target="_blank">Pubmed &#10138</a></span></p>
+			<p>Galperin MY, Makarova KS, Wolf YI, Koonin EV. Nucleic Acids Res. 2015 Jan;43(Database issue):D261-9. doi: 10.1093/nar/gku1223. Epub 2014 Nov 26.</p>
+			
+			<p><span id="num">Orthologous gene clusters and taxon signature genes for viruses of prokaryotes. <a href="http://www.ncbi.nlm.nih.gov/pubmed/23222723" target="_blank">Pubmed &#10138</a></span></p>
+			<p>Kristensen DM, Waller AS, Yamada T, Bork P, Mushegian AR, Koonin EV. J Bacteriol. 2013 Mar;195(5):941-50. doi: 10.1128/JB.01801-12. Epub 2012 Dec 7.</p>
+			
+			<p><span id="num">Evolutionarily conserved orthologous families in phages are relatively rare in their prokaryotic hosts. <a href="http://www.ncbi.nlm.nih.gov/pubmed/21317336" target="_blank">Pubmed &#10138</a></span></p>
+			<p>Kristensen DM, Cai X, Mushegian A. J Bacteriol. 2011 Apr;193(8):1806-14. doi: 10.1128/JB.01311-10. Epub 2011 Feb 11.</p>
+			
+			<p><span id="num">A low-polynomial algorithm for assembling clusters of orthologous groups from intergenomic symmetric best matches. <a href="http://www.ncbi.nlm.nih.gov/pubmed/20439257" target="_blank">Pubmed &#10138</a></span></p>
+			<p>Kristensen DM, Kannan L, Coleman MK, Wolf YI, Sorokin A, Koonin EV, Mushegian A. Bioinformatics. 2010 Jun 15;26(12):1481-7. doi: 10.1093/bioinformatics/btq229.</p>
+
+			<p><span id="num">A genomic perspective on protein families. <a href="https://www.ncbi.nlm.nih.gov/pubmed/9381173" target="_blank">Pubmed &#10138</a></span></p>
+			<p>Tatusov RL, Koonin EV, Lipman DJ. Science. 1997 Oct 24;278(5338):631-7.</p></br>
+						
+			<h4 id="italics">Selected Applications</h4><br>
+
+			<p><span id="num">IMG/VR: a database of cultured and uncultured DNA Viruses and retroviruses. <a href="https://www.ncbi.nlm.nih.gov/pubmed/27799466" target="_blank">Pubmed &#10138</a></span></p>
+			<p>Paez-Espino D, Chen IA, Palaniappan K, Ratner A, Chu K, Szeto E, Pillay M, Huang J, Markowitz VM, Nielsen T, Huntemann M, K Reddy TB, Pavlopoulos GA, Sullivan MB, Campbell BJ, Chen F, McMahon K, Hallam SJ, Denef V, Cavicchioli R, Caffrey SM, Streit WR, Webster J, Handley KM, Salekdeh GH, Tsesmetzis N, Setubal JC, Pope PB, Liu WT, Rivers AR, Ivanova NN, Kyrpides NC. Nucleic Acids Res. 2017 Jan 4;45(D1):D457-D465. doi: 10.1093/nar/gkw1030. Epub 2016 Oct 30.</p>
+
+			<p><span id="num">eggNOG 4.5: a hierarchical orthology framework with improved functional annotations for eukaryotic, prokaryotic and viral sequences. <a href="https://www.ncbi.nlm.nih.gov/pubmed/26582926" target="_blank">Pubmed &#10138</a></span></p>
+			<p>Huerta-Cepas J, Szklarczyk D, Forslund K, Cook H, Heller D, Walter MC, Rattei T, Mende DR, Sunagawa S, Kuhn M, Jensen LJ, von Mering C, Bork P. Nucleic Acids Res. 2016 Jan 4;44(D1):D286-93. doi: 10.1093/nar/gkv1248. Epub 2015 Nov 17.</p>
+
+			<p><span id="num">Classification and quantification of bacteriophage taxa in human gut metagenomes. <a href="http://www.ncbi.nlm.nih.gov/pubmed/24621522" target="_blank">Pubmed &#10138</a></span></p>
+			<p>Waller AS, Yamada T, Kristensen DM, Kultima JR, Sunagawa S, Koonin EV, Bork P. ISME J. 2014 Jul;8(7):1391-402. doi: 10.1038/ismej.2014.30.</p>
+			
+			<p><span id="num">Contribution of phage-derived genomic islands to the virulence of facultative bacterial pathogens. <a href="http://www.ncbi.nlm.nih.gov/pubmed/23035931" target="_blank">Pubmed &#10138</a><span></p>
+			<p>Busby B, Kristensen DM, Koonin EV. Environ Microbiol. 2013 Feb;15(2):307-12. doi: 10.1111/j.1462-2920.2012.02886.x.</p><br>	
+
+	</body>
+	
+	
+	<center><div id="footer1"><a href="home.html#"><b>HOME</b></a> | <a href="genometable.html#"><b>GENOME TABLE</b></a> | <a href="VOGbigtable.html#"><b>VOG TABLE</b></a> | <a href="downloads.html#"><b>DOWNLOADS</b></a> | <a href="newsupdate.html#"><b>NEWS & UPDATES</b></a> | <a href="tutorial.html#"><b>TUTORIAL</b></a> | <a href="#" ><b>BACK TO TOP</b></a></div></center>
+	<hr>
+	<center><td width=60% align=center><font color="#000000"><font size=2>
+			
+		<br>
+		<center><img src="phage-icon.png" width="70" height="80"><center>
+		Prokaryotic Virus Orthologous Groups<br>
+		Website updated in May 2017. Genomes updated in May 2016.<br>
+		</font></font>
+		</center>
+		
+</html>

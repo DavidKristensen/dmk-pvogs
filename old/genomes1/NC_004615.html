@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Prokaryotic Virus Orthologous Groups</title>
+
+		<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+
+		<link rel="stylesheet" type="text/css" href="../datatables.css">
+
+		<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+		<script type="text/javascript" src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
+
+		<!-- My javascript!!! -->
+
+		<script  type="text/javascript" src="../table_java.js"></script>
+
+		<!-- Google Analytics!!! -->
+
+		<script  type="text/javascript" src="../GoogleAnalytics.js"></script>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1>Prokaryotic Virus Orthologous Groups</h1>
+
+		</header>
+
+		<article>
+
+			<h2>Individual Genome Table - List of proteins conserved in VOGs for this genome:</h2>
+
+			<p id="para">* NOTE: The following search box is a <i>"contains character"</i> rather than an <i>"exact match"</i> tool.</p>
+
+
+		</article>
+
+		<style type="text/css">
+
+			p#id {text-align: justified; margin-left: 1cm;}
+
+			.tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa; margin-left: 1cm; margin-right: 1cm;}
+
+			.tg td{font-family:Arial, sans-serif;font-size:14px;padding:7px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+
+			.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#cc7914;border-top-width:1px;border-bottom-width:1px; text-align:center}
+
+			.tg .tg-g8a9{background-color:#F0F8FF;font-family:Verdana, Geneva, sans-serif !important;}
+
+			.tg .tg-xt0r{font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;text-align:center}
+
+			.tg .tg-xt0r1{font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;text-align:left}
+
+			.tg .tg-xgst{background-color:#f8f4ec;font-family:Verdana, Geneva, sans-serif !important; text-align:center}
+
+			.tg .tg-xgst1{background-color:#f8f4ec;font-family:Verdana, Geneva, sans-serif !important; text-align:left}
+
+			.tg .tg-zemy{font-family:Verdana, Geneva, sans-serif !important;;text-align:center}
+
+			.tg .tg-zemy1{font-family:Verdana, Geneva, sans-serif !important;;text-align:left}
+
+			.tg .tg-9vto{font-family:Verdana, Geneva, sans-serif !important;}
+
+			.tg tr:hover td { background: #c3a87b !important;}
+
+			@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+
+		</style>
+
+		<center><div class="tg-wrap"><table class="tg">
+
+			<tr>
+			<th class="tg-xt0r">Species</th><th class="tg-xt0r">Genome Accession</th><th class="tg-xt0r">Genome Size (bp)</th><th class="tg-xt0r">Proteins</th><th class="tg-xt0r">VOGs</th><th class="tg-xt0r">Host</th><th class="tg-xt0r">Host Domain</th><th class="tg-xt0r">Genetic Material</th><th class="tg-xt0r">Order</th><th class="tg-xt0r">Family</th><th class="tg-xt0r">Genus</th>
+			</tr>
+			<tr>
+			<td class="tg-zemy"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=12360" target="_blank">Staphylococcus phage 11&#10138</a></td><td class="tg-zemy"><a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_004615" target="_blank">NC_004615&#10138</a></td><td class="tg-zemy">43604</td><td class="tg-zemy">66</td><td class="tg-zemy">60</td><td class="tg-zemy">Staphylococcus aureus subsp. aureus NCTC 8325</td><td class="tg-zemy">Bacteria</td><td class="tg-zemy">dsDNA viruses, no RNA stage</td><td class="tg-zemy">Caudovirales</td><td class="tg-zemy"><a href="http://viralzone.expasy.org/all_by_species/142.html" target="_blank">Siphoviridae&#10138</a></td><td class="tg-zemy"><a href="http://viralzone.expasy.org/all_by_species/6437.html" target="_blank">Phietalikevirus&#10138</a></td>
+			</tr>
+		</table></center>
+
+		<table id="POGs_table" class="display" cellspacing="0" width="100%">
+			<thead>
+				<tr><th>VOGs</th><th>Host Domain</th><th>Number of Proteins</th><th>Number of Genomes</th><th>Number of Virus Families</th><th>Number of Virus Genera</th><th>Protein Annotation (Protein Accession)</th></tr>
+</thead>
+			<thead class="filters">
+				<tr><th>VOGs</th><th>Host Domain</th><th>Number of Proteins</th><th>Number of Genomes</th><th>Number of Virus Families</th><th>Number of Virus Genera</th><th>Protein Annotation (Protein Accession)</th></tr>
+			</thead>
+		<tbody>
+
+			<tr><td><a href="../VOGtables/VOG0025.html">See VOG0025&#8635</a></td><td>Bacteria+Archaea</td><td>1644</td><td>1247</td><td>3</td><td>32</td><td>helicase DnaB (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803269.1" target="_blank">NP_803269.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0054.html">See VOG0054&#8635</a></td><td>Bacteria</td><td>125</td><td>125</td><td>3</td><td>9</td><td>holin (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803305.1" target="_blank">NP_803305.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0085.html">See VOG0085&#8635</a></td><td>Bacteria+Archaea</td><td>271</td><td>271</td><td>5</td><td>19</td><td>dUTPase (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803278.1" target="_blank">NP_803278.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0198.html">See VOG0198&#8635</a></td><td>Bacteria</td><td>202</td><td>201</td><td>3</td><td>10</td><td>rinA (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803281.1" target="_blank">NP_803281.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0226.html">See VOG0226&#8635</a></td><td>Bacteria</td><td>536</td><td>535</td><td>3</td><td>20</td><td>ssb (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803266.1" target="_blank">NP_803266.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0275.html">See VOG0275&#8635</a></td><td>Bacteria+Archaea</td><td>767</td><td>727</td><td>6</td><td>31</td><td>integrase (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803254.1" target="_blank">NP_803254.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0322.html">See VOG0322&#8635</a></td><td>Bacteria+Archaea</td><td>262</td><td>262</td><td>3</td><td>11</td><td>phi ETA orf 17-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803265.1" target="_blank">NP_803265.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0514.html">See VOG0514&#8635</a></td><td>Bacteria</td><td>67</td><td>67</td><td>2</td><td>3</td><td>phi PV83 orf 19-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803267.1" target="_blank">NP_803267.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0518.html">See VOG0518&#8635</a></td><td>Bacteria</td><td>85</td><td>85</td><td>2</td><td>6</td><td>phi PVL orf 52-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803276.1" target="_blank">NP_803276.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0521.html">See VOG0521&#8635</a></td><td>Bacteria</td><td>11</td><td>11</td><td>2</td><td>1</td><td>PV83 orf 4-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803257.1" target="_blank">NP_803257.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0524.html">See VOG0524&#8635</a></td><td>Bacteria</td><td>70</td><td>70</td><td>3</td><td>3</td><td>phi ETA orf 24-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803270.1" target="_blank">NP_803270.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0525.html">See VOG0525&#8635</a></td><td>Bacteria</td><td>60</td><td>60</td><td>1</td><td>3</td><td>PV83 orf 23-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803272.1" target="_blank">NP_803272.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0526.html">See VOG0526&#8635</a></td><td>Bacteria</td><td>67</td><td>67</td><td>1</td><td>3</td><td>phi PVL orf 51-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803275.1" target="_blank">NP_803275.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0534.html">See VOG0534&#8635</a></td><td>Bacteria</td><td>60</td><td>60</td><td>2</td><td>3</td><td>phi PVL orf 39-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803264.1" target="_blank">NP_803264.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0535.html">See VOG0535&#8635</a></td><td>Bacteria</td><td>24</td><td>23</td><td>2</td><td>4</td><td>putative predicted product (predicted ORF03) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0536.html">See VOG0536&#8635</a></td><td>Bacteria</td><td>115</td><td>115</td><td>3</td><td>10</td><td>phi ETA orf 25-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803271.1" target="_blank">NP_803271.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0547.html">See VOG0547&#8635</a></td><td>Bacteria</td><td>18</td><td>18</td><td>1</td><td>3</td><td>putative predicted product (predicted ORF01) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0557.html">See VOG0557&#8635</a></td><td>Bacteria</td><td>71</td><td>71</td><td>1</td><td>3</td><td>putative predicted product (predicted ORF06) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0558.html">See VOG0558&#8635</a></td><td>Bacteria</td><td>10</td><td>10</td><td>1</td><td>2</td><td>putative predicted product (predicted ORF07) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0559.html">See VOG0559&#8635</a></td><td>Bacteria</td><td>94</td><td>94</td><td>2</td><td>6</td><td>rinB (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803280.1" target="_blank">NP_803280.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0720.html">See VOG0720&#8635</a></td><td>Bacteria</td><td>580</td><td>579</td><td>3</td><td>15</td><td>phi Mu50B-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803284.1" target="_blank">NP_803284.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0723.html">See VOG0723&#8635</a></td><td>Bacteria</td><td>42</td><td>42</td><td>2</td><td>3</td><td>putative predicted product (predicted ORF10) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0724.html">See VOG0724&#8635</a></td><td>Bacteria</td><td>102</td><td>102</td><td>2</td><td>5</td><td>phi Mu50B-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803291.1" target="_blank">NP_803291.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0725.html">See VOG0725&#8635</a></td><td>Bacteria</td><td>83</td><td>81</td><td>1</td><td>5</td><td>unknown phi protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803293.1" target="_blank">NP_803293.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0784.html">See VOG0784&#8635</a></td><td>Bacteria</td><td>36</td><td>36</td><td>1</td><td>1</td><td>phi ETA orf 63-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803304.1" target="_blank">NP_803304.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0795.html">See VOG0795&#8635</a></td><td>Bacteria</td><td>24</td><td>24</td><td>1</td><td>1</td><td>putative predicted product (predicted ORF08) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0796.html">See VOG0796&#8635</a></td><td>Bacteria</td><td>293</td><td>293</td><td>3</td><td>16</td><td>small terminase (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803282.1" target="_blank">NP_803282.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0797.html">See VOG0797&#8635</a></td><td>Bacteria</td><td>16</td><td>16</td><td>1</td><td>1</td><td>putative predicted product (predicted ORF09) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0799.html">See VOG0799&#8635</a></td><td>Bacteria</td><td>81</td><td>80</td><td>1</td><td>5</td><td>structural phi Mu50B (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803292.1" target="_blank">NP_803292.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0800.html">See VOG0800&#8635</a></td><td>Bacteria</td><td>43</td><td>43</td><td>2</td><td>3</td><td>unknown phi protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803294.1" target="_blank">NP_803294.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0801.html">See VOG0801&#8635</a></td><td>Bacteria</td><td>88</td><td>88</td><td>2</td><td>5</td><td>phi ETA orf 54-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803296.1" target="_blank">NP_803296.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0804.html">See VOG0804&#8635</a></td><td>Bacteria</td><td>53</td><td>53</td><td>2</td><td>2</td><td>phi105 orf 44-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803299.1" target="_blank">NP_803299.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG0805.html">See VOG0805&#8635</a></td><td>Bacteria</td><td>128</td><td>127</td><td>2</td><td>4</td><td>phi SLT orf 99-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803301.1" target="_blank">NP_803301.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2335.html">See VOG2335&#8635</a></td><td>Bacteria</td><td>21</td><td>21</td><td>2</td><td>2</td><td>hypothetical protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803261.1" target="_blank">NP_803261.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3453.html">See VOG3453&#8635</a></td><td>Bacteria</td><td>22</td><td>22</td><td>2</td><td>2</td><td>phi PV83 orf 12-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803263.1" target="_blank">NP_803263.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3460.html">See VOG3460&#8635</a></td><td>Bacteria</td><td>5</td><td>5</td><td>1</td><td>2</td><td>phi SLT orf 81b-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803279.1" target="_blank">NP_803279.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3704.html">See VOG3704&#8635</a></td><td>Bacteria</td><td>5</td><td>5</td><td>1</td><td>1</td><td>excisionase (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803255.1" target="_blank">NP_803255.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3705.html">See VOG3705&#8635</a></td><td>Bacteria</td><td>6</td><td>6</td><td>1</td><td>1</td><td>PV83 orf 3-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803256.1" target="_blank">NP_803256.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3707.html">See VOG3707&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>1</td><td>2</td><td>phi PV83 orf 10-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803262.1" target="_blank">NP_803262.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3708.html">See VOG3708&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>1</td><td>3</td><td>putative predicted product (predicted ORF02) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3709.html">See VOG3709&#8635</a></td><td>Bacteria</td><td>21</td><td>21</td><td>2</td><td>2</td><td>putative predicted product (predicted ORF04) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3710.html">See VOG3710&#8635</a></td><td>Bacteria</td><td>22</td><td>22</td><td>1</td><td>2</td><td>putative predicted product (predicted ORF05) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4543.html">See VOG4543&#8635</a></td><td>Bacteria+Archaea</td><td>8131</td><td>2497</td><td>8</td><td>79</td><td>phi Mu50B-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803288.1" target="_blank">NP_803288.1&#10138</a>) putative predicted product (predicted ORF13) cro-like repressor (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803259.1" target="_blank">NP_803259.1&#10138</a>) cI-like repressor (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803258.1" target="_blank">NP_803258.1&#10138</a>) HTH DNA binding protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803273.1" target="_blank">NP_803273.1&#10138</a>) phi Mu50B-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803290.1" target="_blank">NP_803290.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4544.html">See VOG4544&#8635</a></td><td>Bacteria+Archaea</td><td>2299</td><td>2281</td><td>3</td><td>68</td><td>large terminase (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803283.1" target="_blank">NP_803283.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4545.html">See VOG4545&#8635</a></td><td>Bacteria+Archaea</td><td>1762</td><td>1747</td><td>3</td><td>54</td><td>tape measure protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803295.1" target="_blank">NP_803295.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4546.html">See VOG4546&#8635</a></td><td>Bacteria</td><td>1289</td><td>1002</td><td>3</td><td>31</td><td>tail fiber (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803303.1" target="_blank">NP_803303.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4547.html">See VOG4547&#8635</a></td><td>Bacteria</td><td>1259</td><td>1190</td><td>5</td><td>47</td><td>cell wall hydrolase (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803302.1" target="_blank">NP_803302.1&#10138</a>) amidase (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803306.2" target="_blank">NP_803306.2&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4552.html">See VOG4552&#8635</a></td><td>Bacteria</td><td>759</td><td>583</td><td>3</td><td>28</td><td>anti-repressor (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803260.1" target="_blank">NP_803260.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4553.html">See VOG4553&#8635</a></td><td>Bacteria+Archaea</td><td>710</td><td>705</td><td>3</td><td>23</td><td>head protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803287.1" target="_blank">NP_803287.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4555.html">See VOG4555&#8635</a></td><td>Bacteria+Archaea</td><td>631</td><td>629</td><td>3</td><td>19</td><td>phi Mu50B-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803286.1" target="_blank">NP_803286.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4564.html">See VOG4564&#8635</a></td><td>Bacteria+Archaea</td><td>407</td><td>406</td><td>3</td><td>18</td><td>phi Mu50B-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803285.1" target="_blank">NP_803285.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4566.html">See VOG4566&#8635</a></td><td>Bacteria</td><td>394</td><td>393</td><td>3</td><td>19</td><td>phi PV83 orf 20-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803268.1" target="_blank">NP_803268.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4612.html">See VOG4612&#8635</a></td><td>Bacteria</td><td>87</td><td>80</td><td>1</td><td>3</td><td>putative predicted product (predicted ORF11) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4619.html">See VOG4619&#8635</a></td><td>Bacteria</td><td>72</td><td>72</td><td>1</td><td>4</td><td>phi ETA orf 55-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803297.1" target="_blank">NP_803297.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4626.html">See VOG4626&#8635</a></td><td>Bacteria</td><td>59</td><td>59</td><td>2</td><td>3</td><td>phi ETA orf 56-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803298.1" target="_blank">NP_803298.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4705.html">See VOG4705&#8635</a></td><td>Bacteria</td><td>96</td><td>94</td><td>3</td><td>6</td><td>phi ETA orf 58-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803300.1" target="_blank">NP_803300.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4713.html">See VOG4713&#8635</a></td><td>Bacteria</td><td>82</td><td>82</td><td>2</td><td>5</td><td>phi Mu50B-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803289.1" target="_blank">NP_803289.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4716.html">See VOG4716&#8635</a></td><td>Bacteria</td><td>81</td><td>81</td><td>1</td><td>4</td><td>phi PVL orf 50-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803274.1" target="_blank">NP_803274.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5855.html">See VOG5855&#8635</a></td><td>Bacteria</td><td>10</td><td>10</td><td>2</td><td>1</td><td>putative predicted product (predicted ORF12) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG7490.html">See VOG7490&#8635</a></td><td>Bacteria</td><td>5</td><td>5</td><td>2</td><td>2</td><td>ETA orf 33-like protein (<a href="http://www.ncbi.nlm.nih.gov/protein/NP_803277.1" target="_blank">NP_803277.1&#10138</a>) </td></tr>
+
+		</tbody>
+
+		</table>
+
+	</body>
+
+
+	<center><div id="footer1"><a href="../home.html#"><b>HOME</b></a> | <a href="../genometable.html#"><b>GENOME TABLE</b></a> | <a href="../VOGbigtable.html#"><b>VOG TABLE</b></a> | <a href="../downloads.html#"><b>DOWNLOADS</b></a> | <a href="../tutorial.html#"><b>TUTORIAL</b></a> | <a href="#" ><b>BACK TO TOP</b></a></div></center>
+
+	<hr>
+
+	<td width=60% align=center><font color="#000000"><font size=2>
+	<br>
+	<center><img src="../phage-icon.png" width="70" height="80"><center>
+	Prokaryotic Virus Orthologous Groups<br>
+	Website updated in May 2017. Genomes updated in May 2016.<br>
+	</font></font>
+	</td></center>
+</html>

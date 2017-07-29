@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Prokaryotic Virus Orthologous Groups</title>
+
+		<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+
+		<link rel="stylesheet" type="text/css" href="../datatables.css">
+
+		<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+		<script type="text/javascript" src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
+
+		<!-- My javascript!!! -->
+
+		<script  type="text/javascript" src="../table_java.js"></script>
+
+		<!-- Google Analytics!!! -->
+
+		<script  type="text/javascript" src="../GoogleAnalytics.js"></script>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1>Prokaryotic Virus Orthologous Groups</h1>
+
+		</header>
+
+		<article>
+
+			<h2>Individual Genome Table - List of proteins conserved in VOGs for this genome:</h2>
+
+			<p id="para">* NOTE: The following search box is a <i>"contains character"</i> rather than an <i>"exact match"</i> tool.</p>
+
+
+		</article>
+
+		<style type="text/css">
+
+			p#id {text-align: justified; margin-left: 1cm;}
+
+			.tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa; margin-left: 1cm; margin-right: 1cm;}
+
+			.tg td{font-family:Arial, sans-serif;font-size:14px;padding:7px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+
+			.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#cc7914;border-top-width:1px;border-bottom-width:1px; text-align:center}
+
+			.tg .tg-g8a9{background-color:#F0F8FF;font-family:Verdana, Geneva, sans-serif !important;}
+
+			.tg .tg-xt0r{font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;text-align:center}
+
+			.tg .tg-xt0r1{font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;text-align:left}
+
+			.tg .tg-xgst{background-color:#f8f4ec;font-family:Verdana, Geneva, sans-serif !important; text-align:center}
+
+			.tg .tg-xgst1{background-color:#f8f4ec;font-family:Verdana, Geneva, sans-serif !important; text-align:left}
+
+			.tg .tg-zemy{font-family:Verdana, Geneva, sans-serif !important;;text-align:center}
+
+			.tg .tg-zemy1{font-family:Verdana, Geneva, sans-serif !important;;text-align:left}
+
+			.tg .tg-9vto{font-family:Verdana, Geneva, sans-serif !important;}
+
+			.tg tr:hover td { background: #c3a87b !important;}
+
+			@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+
+		</style>
+
+		<center><div class="tg-wrap"><table class="tg">
+
+			<tr>
+			<th class="tg-xt0r">Species</th><th class="tg-xt0r">Genome Accession</th><th class="tg-xt0r">Genome Size (bp)</th><th class="tg-xt0r">Proteins</th><th class="tg-xt0r">VOGs</th><th class="tg-xt0r">Host</th><th class="tg-xt0r">Host Domain</th><th class="tg-xt0r">Genetic Material</th><th class="tg-xt0r">Order</th><th class="tg-xt0r">Family</th><th class="tg-xt0r">Genus</th>
+			</tr>
+			<tr>
+			<td class="tg-zemy"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1074309" target="_blank">Mycobacterium phage BigNuz&#10138</a></td><td class="tg-zemy"><a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_023692" target="_blank">NC_023692&#10138</a></td><td class="tg-zemy">48984</td><td class="tg-zemy">82</td><td class="tg-zemy">69</td><td class="tg-zemy">Mycobacterium smegmatis mc2 155</td><td class="tg-zemy">Bacteria</td><td class="tg-zemy">dsDNA viruses, no RNA stage</td><td class="tg-zemy">Caudovirales</td><td class="tg-zemy"><a href="http://viralzone.expasy.org/all_by_species/142.html" target="_blank">Siphoviridae&#10138</a></td><td class="tg-zemy"><a href="http://viralzone.expasy.org/all_by_species/6158.html" target="_blank">Bignuzlikevirus&#10138</a></td>
+			</tr>
+		</table></center>
+
+		<table id="POGs_table" class="display" cellspacing="0" width="100%">
+			<thead>
+				<tr><th>VOGs</th><th>Host Domain</th><th>Number of Proteins</th><th>Number of Genomes</th><th>Number of Virus Families</th><th>Number of Virus Genera</th><th>Protein Annotation (Protein Accession)</th></tr>
+</thead>
+			<thead class="filters">
+				<tr><th>VOGs</th><th>Host Domain</th><th>Number of Proteins</th><th>Number of Genomes</th><th>Number of Virus Families</th><th>Number of Virus Genera</th><th>Protein Annotation (Protein Accession)</th></tr>
+			</thead>
+		<tbody>
+
+			<tr><td><a href="../VOGtables/VOG0275.html">See VOG0275&#8635</a></td><td>Bacteria+Archaea</td><td>767</td><td>727</td><td>6</td><td>31</td><td>gp33 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012282.1" target="_blank">YP_009012282.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1165.html">See VOG1165&#8635</a></td><td>Bacteria</td><td>388</td><td>388</td><td>2</td><td>12</td><td>gp18 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012267.1" target="_blank">YP_009012267.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1167.html">See VOG1167&#8635</a></td><td>Bacteria</td><td>177</td><td>177</td><td>2</td><td>9</td><td>gp19 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012268.1" target="_blank">YP_009012268.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1175.html">See VOG1175&#8635</a></td><td>Bacteria</td><td>129</td><td>127</td><td>2</td><td>7</td><td>gp41 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012290.1" target="_blank">YP_009012290.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1206.html">See VOG1206&#8635</a></td><td>Bacteria</td><td>85</td><td>74</td><td>2</td><td>7</td><td>gp57 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012306.1" target="_blank">YP_009012306.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1209.html">See VOG1209&#8635</a></td><td>Bacteria</td><td>46</td><td>46</td><td>1</td><td>3</td><td>gp73 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012322.1" target="_blank">YP_009012322.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1212.html">See VOG1212&#8635</a></td><td>Bacteria</td><td>116</td><td>116</td><td>3</td><td>7</td><td>gp12 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012261.1" target="_blank">YP_009012261.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1213.html">See VOG1213&#8635</a></td><td>Bacteria</td><td>225</td><td>119</td><td>1</td><td>7</td><td>gp14 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012263.1" target="_blank">YP_009012263.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1215.html">See VOG1215&#8635</a></td><td>Bacteria</td><td>119</td><td>119</td><td>1</td><td>8</td><td>gp17 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012266.1" target="_blank">YP_009012266.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1309.html">See VOG1309&#8635</a></td><td>Bacteria</td><td>173</td><td>173</td><td>3</td><td>8</td><td>gp48 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012297.1" target="_blank">YP_009012297.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1356.html">See VOG1356&#8635</a></td><td>Bacteria</td><td>175</td><td>174</td><td>3</td><td>8</td><td>gp3 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012252.1" target="_blank">YP_009012252.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG1581.html">See VOG1581&#8635</a></td><td>Bacteria</td><td>279</td><td>279</td><td>2</td><td>7</td><td>gp8 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012257.1" target="_blank">YP_009012257.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2020.html">See VOG2020&#8635</a></td><td>Bacteria</td><td>27</td><td>27</td><td>1</td><td>4</td><td>gp25 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012274.1" target="_blank">YP_009012274.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2023.html">See VOG2023&#8635</a></td><td>Bacteria</td><td>74</td><td>74</td><td>1</td><td>5</td><td>gp40 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012289.1" target="_blank">YP_009012289.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2024.html">See VOG2024&#8635</a></td><td>Bacteria</td><td>15</td><td>15</td><td>1</td><td>3</td><td>gp42 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012291.1" target="_blank">YP_009012291.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2025.html">See VOG2025&#8635</a></td><td>Bacteria</td><td>12</td><td>12</td><td>1</td><td>3</td><td>gp43 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012292.1" target="_blank">YP_009012292.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2026.html">See VOG2026&#8635</a></td><td>Bacteria</td><td>9</td><td>9</td><td>1</td><td>2</td><td>gp44 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012293.1" target="_blank">YP_009012293.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2027.html">See VOG2027&#8635</a></td><td>Bacteria</td><td>20</td><td>18</td><td>1</td><td>3</td><td>gp46 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012295.1" target="_blank">YP_009012295.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2029.html">See VOG2029&#8635</a></td><td>Bacteria</td><td>12</td><td>12</td><td>1</td><td>3</td><td>gp50 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012299.1" target="_blank">YP_009012299.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2030.html">See VOG2030&#8635</a></td><td>Bacteria</td><td>46</td><td>46</td><td>2</td><td>5</td><td>gp56 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012305.1" target="_blank">YP_009012305.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2033.html">See VOG2033&#8635</a></td><td>Bacteria</td><td>47</td><td>47</td><td>1</td><td>5</td><td>gp61 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012310.1" target="_blank">YP_009012310.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2036.html">See VOG2036&#8635</a></td><td>Bacteria</td><td>44</td><td>44</td><td>1</td><td>4</td><td>gp64 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012313.1" target="_blank">YP_009012313.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2037.html">See VOG2037&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>1</td><td>2</td><td>gp66 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012315.1" target="_blank">YP_009012315.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2038.html">See VOG2038&#8635</a></td><td>Bacteria</td><td>53</td><td>53</td><td>1</td><td>5</td><td>gp67 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012316.1" target="_blank">YP_009012316.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2040.html">See VOG2040&#8635</a></td><td>Bacteria</td><td>68</td><td>68</td><td>1</td><td>5</td><td>gp79 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012328.1" target="_blank">YP_009012328.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2474.html">See VOG2474&#8635</a></td><td>Bacteria</td><td>52</td><td>52</td><td>2</td><td>3</td><td>gp31 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012280.1" target="_blank">YP_009012280.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2483.html">See VOG2483&#8635</a></td><td>Bacteria</td><td>36</td><td>36</td><td>3</td><td>4</td><td>gp77 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012326.1" target="_blank">YP_009012326.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2502.html">See VOG2502&#8635</a></td><td>Bacteria</td><td>11</td><td>11</td><td>1</td><td>3</td><td>gp23 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012272.1" target="_blank">YP_009012272.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2549.html">See VOG2549&#8635</a></td><td>Bacteria</td><td>41</td><td>41</td><td>1</td><td>3</td><td>gp21 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012270.1" target="_blank">YP_009012270.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2560.html">See VOG2560&#8635</a></td><td>Bacteria</td><td>43</td><td>43</td><td>1</td><td>4</td><td>gp1 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012250.1" target="_blank">YP_009012250.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2692.html">See VOG2692&#8635</a></td><td>Bacteria</td><td>20</td><td>20</td><td>1</td><td>2</td><td>gp68 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012317.1" target="_blank">YP_009012317.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2898.html">See VOG2898&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>1</td><td>3</td><td>gp54 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012303.1" target="_blank">YP_009012303.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG2904.html">See VOG2904&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>1</td><td>3</td><td>gp75 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012324.1" target="_blank">YP_009012324.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3210.html">See VOG3210&#8635</a></td><td>Bacteria</td><td>5</td><td>5</td><td>1</td><td>1</td><td>gp5 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012254.1" target="_blank">YP_009012254.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3211.html">See VOG3211&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>2</td><td>gp15 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012264.1" target="_blank">YP_009012264.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3212.html">See VOG3212&#8635</a></td><td>Bacteria</td><td>18</td><td>18</td><td>1</td><td>3</td><td>gp38 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012287.1" target="_blank">YP_009012287.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3213.html">See VOG3213&#8635</a></td><td>Bacteria</td><td>8</td><td>8</td><td>1</td><td>2</td><td>gp39 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012288.1" target="_blank">YP_009012288.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3214.html">See VOG3214&#8635</a></td><td>Bacteria</td><td>9</td><td>9</td><td>1</td><td>2</td><td>gp45 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012294.1" target="_blank">YP_009012294.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3215.html">See VOG3215&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>1</td><td>2</td><td>gp51 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012300.1" target="_blank">YP_009012300.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3217.html">See VOG3217&#8635</a></td><td>Bacteria</td><td>6</td><td>6</td><td>1</td><td>2</td><td>gp53 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012302.1" target="_blank">YP_009012302.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG3218.html">See VOG3218&#8635</a></td><td>Bacteria</td><td>9</td><td>9</td><td>2</td><td>2</td><td>gp74 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012323.1" target="_blank">YP_009012323.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4543.html">See VOG4543&#8635</a></td><td>Bacteria+Archaea</td><td>8131</td><td>2497</td><td>8</td><td>79</td><td>gp81 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012330.1" target="_blank">YP_009012330.1&#10138</a>) gp34 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012283.1" target="_blank">YP_009012283.1&#10138</a>) gp62 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012311.1" target="_blank">YP_009012311.1&#10138</a>) gp35 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012284.1" target="_blank">YP_009012284.1&#10138</a>) gp11 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012260.1" target="_blank">YP_009012260.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4544.html">See VOG4544&#8635</a></td><td>Bacteria+Archaea</td><td>2299</td><td>2281</td><td>3</td><td>68</td><td>gp2 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012251.1" target="_blank">YP_009012251.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4545.html">See VOG4545&#8635</a></td><td>Bacteria+Archaea</td><td>1762</td><td>1747</td><td>3</td><td>54</td><td>gp16 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012265.1" target="_blank">YP_009012265.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4547.html">See VOG4547&#8635</a></td><td>Bacteria</td><td>1259</td><td>1190</td><td>5</td><td>47</td><td>gp26 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012275.1" target="_blank">YP_009012275.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4552.html">See VOG4552&#8635</a></td><td>Bacteria</td><td>759</td><td>583</td><td>3</td><td>28</td><td>gp37 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012286.1" target="_blank">YP_009012286.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4554.html">See VOG4554&#8635</a></td><td>Bacteria</td><td>638</td><td>453</td><td>2</td><td>14</td><td>gp22 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012271.1" target="_blank">YP_009012271.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4557.html">See VOG4557&#8635</a></td><td>Bacteria</td><td>518</td><td>517</td><td>3</td><td>13</td><td>gp13 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012262.1" target="_blank">YP_009012262.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4558.html">See VOG4558&#8635</a></td><td>Bacteria</td><td>511</td><td>511</td><td>2</td><td>15</td><td>gp20 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012269.1" target="_blank">YP_009012269.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4560.html">See VOG4560&#8635</a></td><td>Bacteria</td><td>495</td><td>495</td><td>2</td><td>15</td><td>gp27 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012276.1" target="_blank">YP_009012276.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4571.html">See VOG4571&#8635</a></td><td>Bacteria+Archaea</td><td>351</td><td>328</td><td>4</td><td>21</td><td>gp55 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012304.1" target="_blank">YP_009012304.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4573.html">See VOG4573&#8635</a></td><td>Bacteria</td><td>344</td><td>337</td><td>3</td><td>21</td><td>gp4 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012253.1" target="_blank">YP_009012253.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4580.html">See VOG4580&#8635</a></td><td>Bacteria</td><td>271</td><td>271</td><td>3</td><td>13</td><td>gp24 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012273.1" target="_blank">YP_009012273.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4636.html">See VOG4636&#8635</a></td><td>Bacteria</td><td>45</td><td>45</td><td>2</td><td>5</td><td>gp63 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012312.1" target="_blank">YP_009012312.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4693.html">See VOG4693&#8635</a></td><td>Bacteria</td><td>300</td><td>299</td><td>3</td><td>16</td><td>gp52 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012301.1" target="_blank">YP_009012301.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4708.html">See VOG4708&#8635</a></td><td>Bacteria</td><td>92</td><td>92</td><td>3</td><td>6</td><td>gp47 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012296.1" target="_blank">YP_009012296.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG4711.html">See VOG4711&#8635</a></td><td>Bacteria+Archaea</td><td>85</td><td>84</td><td>2</td><td>4</td><td>gp6 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012255.1" target="_blank">YP_009012255.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5001.html">See VOG5001&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>1</td><td>1</td><td>gp79 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012328.1" target="_blank">YP_009012328.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG5273.html">See VOG5273&#8635</a></td><td>Bacteria</td><td>23</td><td>23</td><td>1</td><td>2</td><td>gp69 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012318.1" target="_blank">YP_009012318.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG6477.html">See VOG6477&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>1</td><td>3</td><td>gp32 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012281.1" target="_blank">YP_009012281.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG6798.html">See VOG6798&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>1</td><td>1</td><td>gp7 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012256.1" target="_blank">YP_009012256.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG6799.html">See VOG6799&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>1</td><td>1</td><td>gp9 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012258.1" target="_blank">YP_009012258.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG6800.html">See VOG6800&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>1</td><td>1</td><td>gp36 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012285.1" target="_blank">YP_009012285.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG6801.html">See VOG6801&#8635</a></td><td>Bacteria</td><td>7</td><td>7</td><td>1</td><td>1</td><td>gp80 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012329.1" target="_blank">YP_009012329.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG7150.html">See VOG7150&#8635</a></td><td>Bacteria</td><td>6</td><td>6</td><td>1</td><td>2</td><td>gp29 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012278.1" target="_blank">YP_009012278.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG7558.html">See VOG7558&#8635</a></td><td>Bacteria</td><td>5</td><td>5</td><td>1</td><td>1</td><td>gp28 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012277.1" target="_blank">YP_009012277.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG8190.html">See VOG8190&#8635</a></td><td>Bacteria</td><td>5</td><td>5</td><td>1</td><td>1</td><td>gp78 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012327.1" target="_blank">YP_009012327.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9072.html">See VOG9072&#8635</a></td><td>Bacteria</td><td>4</td><td>4</td><td>1</td><td>1</td><td>gp60 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012309.1" target="_blank">YP_009012309.1&#10138</a>) </td></tr>
+
+			<tr><td><a href="../VOGtables/VOG9836.html">See VOG9836&#8635</a></td><td>Bacteria</td><td>3</td><td>3</td><td>1</td><td>2</td><td>gp30 (<a href="http://www.ncbi.nlm.nih.gov/protein/YP_009012279.1" target="_blank">YP_009012279.1&#10138</a>) </td></tr>
+
+		</tbody>
+
+		</table>
+
+	</body>
+
+
+	<center><div id="footer1"><a href="../home.html#"><b>HOME</b></a> | <a href="../genometable.html#"><b>GENOME TABLE</b></a> | <a href="../VOGbigtable.html#"><b>VOG TABLE</b></a> | <a href="../downloads.html#"><b>DOWNLOADS</b></a> | <a href="../tutorial.html#"><b>TUTORIAL</b></a> | <a href="#" ><b>BACK TO TOP</b></a></div></center>
+
+	<hr>
+
+	<td width=60% align=center><font color="#000000"><font size=2>
+	<br>
+	<center><img src="../phage-icon.png" width="70" height="80"><center>
+	Prokaryotic Virus Orthologous Groups<br>
+	Website updated in May 2017. Genomes updated in May 2016.<br>
+	</font></font>
+	</td></center>
+</html>

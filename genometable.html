@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Genomes in Prokaryotic Virus Orthologous Groups Database
+	</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="./files/DataTable/datatables.css"/>
+
+	<script type="text/javascript" src="./data/json2.js"></script>
+	<script type="text/javascript" src="./files/DataTable/datatables.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./files/jquery-ui/jquery-ui.css" />
+	<script type="text/javascript" src="./files/jquery-ui/jquery-ui.js"></script>
+
+	<!-- my javascript and css !-->
+	<link rel="stylesheet" type="text/css" href="./data/datatables.css" />
+	<link rel="stylesheet" type="text/css" href="./data/style.css" />
+
+  <script type="text/javascript" src="./data/genometable.js"></script>
+
+
+</head>
+
+<body>
+
+	<header id="GenomeTables">
+
+		<h1>Prokaryotic Virus Orthologous Groups</h1>
+
+	</header>
+
+	<article>
+
+		<h2>Genome Table - Information regarding all prokaryotic virus genomes analyzed in the pVOGs database:</h2>
+
+		<p>* NOTE: The following virus genomic data was current as of May 2016. However, taxonomic nomenclature of viruses changes over time (e.g., <a href="http://link.springer.com/article/10.1007/s00705-015-2728-0" target="_blank">Taxonomy of prokaryotic viruses: update from the ICTV bacterial and archaeal viruses subcommittee &#10138</a>),
+			and already these names no longer reflect the current status as approved by the <a href="http://www.ictvonline.org/" target="_blank">International Committee on Taxonomy of Viruses &#10138</a>. Other data associated with these genomes such as gene annotations
+			(functional information, start/stop coordinates, metadata, or even their presence/absence in a genome) may also change over time. Clicking on the link of species name or genome accession will redirect you to the <a href="https://www.ncbi.nlm.nih.gov/taxonomy"
+			  target="_blank">NCBI Taxonomy &#10138</a> or <a href="https://www.ncbi.nlm.nih.gov/nuccore" target="_blank">NCBI Nucleotide &#10138</a> database, respectively, containing the most up-to-date data that NCBI has available.</p>
+
+	</article>
+	<div id="rangeSearchWrapper">
+		<button type="button" class="dt-button rangeLink btn btn-secondary" onclick="toggleRange();">Hide Range Search</button>
+		<table id="rangeSearch" >
+			<tbody>
+				<tr>
+					<td> Range of Genome Size: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td> Min </td>
+					<td><input type="text" class="range" id="min-genome" name="min-genome"></td>
+					<td> Max </td>
+					<td><input type="text" class="range" id="max-genome" name="max-genome"></td>
+				</tr>
+				<tr>
+					<td> Range of Proteins: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td> Min </td>
+					<td><input type="text" class="range" id="min-pro" name="min-pro"></td>
+					<td> Max </td>
+					<td><input type="text" class="range" id="max-pro" name="max-pro"></td>
+				</tr>
+				<tr>
+					<td> Range of # of VOGs: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td> Min </td>
+					<td><input type="text" class="range" id="min-vog" name="min-vog"></td>
+					<td> Max </td>
+					<td><input type="text" class="range" id="max-vog" name="max-vog"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<table id="example" class="display" cellspacing="0" width="100%">
+		<thead>
+			<tr>
+				<th>Organism Name</th>
+				<th>Genome Accession</th>
+				<th>Genome Size (bp)</th>
+				<th>Proteins</th>
+				<th># of VOGs</th>
+				<th>Host</th>
+				<th>Host Domain</th>
+				<th>Genetic Material</th>
+				<th>Order</th>
+				<th>Family</th>
+				<th>Genus</th>
+			</tr>
+		</thead>
+		<tfoot style="display: table-header-group">
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+		</tfoot>
+
+	</table>
+
+</body>
+<center>
+	<div id="footer1">
+		<a href="home.html#"><b>HOME</b></a> |
+		<a href="genometable.html#"><b>GENOME TABLE</b></a> |
+		<a href="proteintable.html#"><b>PROTEIN TABLE</b></a> |
+		<a href="VOGbigtable.html#"><b>VOG TABLE</b></a> |
+		<a href="downloads.html#"><b>DOWNLOADS</b></a> |
+		<a href="newsupdate.html#"><b>NEWS & UPDATES</b></a> |
+		<a href="tutorial.html#"><b>TUTORIAL</b></a> |
+		<a href="#"><b>BACK TO TOP</b></a>
+	</div>
+</center>
+
+<hr>
+
+<td width=60% align=center>
+	<font color="#000000">
+		<font size=2>
+			<br>
+			<center>
+				<img src="phage-icon.png" width="70" height="80">
+				<center>
+					Prokaryotic Virus Orthologous Groups<br> Website updated in July 2017. Genomes updated in May 2016.<br>
+		</font>
+	</font>
+</td>
+</center>
+
+</html>

@@ -1,0 +1,18 @@
+tfoot input {
+  width: 100%;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+
+.shortSelect {
+  width: 80px;
+}
+
+.rangeLink {
+  font-family: 'Roboto', sans-serif;
+}
+
+#rangeSearchWrapper {
+  margin-left: 30px;
+}
